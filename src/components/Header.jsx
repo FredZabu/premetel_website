@@ -11,10 +11,10 @@ import Header4 from "./Header4";
 
 const Header = () => (
   <Carousel autoplay>
-    <div className="  mt-[15vh] w-[100vw] h-[90vh] py-10 overflow-y-hidden  bg-[url('./src/assets/Bg2.png')]  bg-cover  bg-no-repeat">
+    <div className="  mt-[15vh] w-[100vw] relative h-[90vh] ">
       <Header1 />
     </div>
-    <div className="  mt-[15vh] w-[100vw] h-[90vh] py-10 overflow-y-hidden  bg-[url('./src/assets/Bg2.png')]  bg-cover  bg-no-repeat">
+    {/* <div className="  mt-[15vh] w-[100vw] h-[90vh] py-10 overflow-y-hidden  bg-[url('./src/assets/Bg2.png')]  bg-cover  bg-no-repeat">
       <Header2 />
     </div>
     <div className="  mt-[15vh] w-[100vw] h-[90vh] py-10 overflow-y-hidden  bg-[url('./src/assets/Bg2.png')]  bg-cover  bg-no-repeat">
@@ -22,7 +22,7 @@ const Header = () => (
     </div>
     <div className="  mt-[15vh] w-[100vw] h-[90vh] py-10 overflow-y-hidden  bg-[url('./src/assets/Bg2.png')]  bg-cover  bg-no-repeat">
       <Header4 />
-    </div>
+    </div> */}
   </Carousel>
 );
 export default Header;

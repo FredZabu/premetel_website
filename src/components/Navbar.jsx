@@ -20,10 +20,10 @@ function Navbar() {
 
 
     return (
-      <div className=' fixed top-0 left-0 right-0 shadow-md sm:shadow-none bg-light-gray-1 z-[999]'>
+      <div className=' h-[12vh] fixed top-0 left-0 right-0 shadow-md sm:shadow-none bg-light-gray-1 z-[999] border-2 border-btn-color'>
             
       
-      <div className='flex sm:w-[95%] justify-between items-center w-[100vw] h-[12vh]  pr-4 sm:px-0   '>
+      <div className='flex sm:w-[95%] justify-between items-center w-[100vw]  pr-4 sm:px-0  h-full '>
                 <div className="sm:flex-[1]"><img src={logo} alt="" /></div>
                 <div className='flex justify-end flex-[2] '>
           <div className={` ${click? 'flex' : 'hidden'} sm:flex   items-center flex-col sm:flex-row sm:static absolute top-[12vh] left-0 right-0 pb-4 sm:pb-0 bg-text-color sm:bg-transparent  h-[50vh]  space-x-12`} >
