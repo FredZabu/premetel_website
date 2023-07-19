@@ -5,7 +5,7 @@ import { ContactForm } from "../components";
 function ContactPage() {
   return (
     <div className=" mt-[12vh]">
-      <div className="h-[70vh] bg-contact bg-cover bg-center  bg-no-repeat">
+      <div className="h-[50vh] sm:h-[70vh] bg-contact bg-cover bg-center  bg-no-repeat">
         <div className="h-full bgkla grid place-items-center">
            <h1 className=" text-4xl sm:text-7xl font-title font-bold text-white sm:leading-[67px] tracking-[0.2px]  text-start ">
            Contact Us
