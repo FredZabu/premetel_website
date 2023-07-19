@@ -4,7 +4,7 @@ import { KeyFocusArea, ServiceSection, AspirationSection, HowItWorks, SubscribeS
 function HomePage() {
   return (
       <div>
-      <div className="border-4 border-btn-color">
+      <div className="">
         <Header />
       </div>
 			<KeyFocusArea />

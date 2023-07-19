@@ -3,8 +3,8 @@ import nurse from "../assets/nurse4.png";
 import { Btn } from "./index";
 function Header4() {
   return (
-    <div className="header_parent w-[90%] sm:w-[90%]  my-[0px] mx-[auto] flex items-center flex-col sm:flex-row ">
-        <div className="">
+    <div className="header_parent w-[90%] my-[2rem] sm:w-[90%]  mx-[auto] flex items-center flex-col sm:flex-row justify-between">
+        <div className="flex-[1]">
         <div className="header_text  p-4 flex flex-col  sm:items-start  mt-5 sm:mt-0 relative  ">
           <p className="text-white text-[16px] font-bold tracking-[0.1px] leading-[24px]   mt-4 sm:mt-10 ">
             Join Us
@@ -24,7 +24,7 @@ function Header4() {
            
 </div>
 
-        <div className="header_image hidden sm:block mt-4 sm:mt-0  h-[500px] ">
+        <div className="header_image hidden sm:block mt-4 sm:mt-0  h-[500px] flex-[1] ">
          
             <img
               src={nurse}

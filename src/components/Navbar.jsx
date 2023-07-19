@@ -20,7 +20,7 @@ function Navbar() {
 
 
     return (
-      <div className=' h-[12vh] fixed top-0 left-0 right-0 shadow-md sm:shadow-none bg-light-gray-1 z-[999] border-2 border-btn-color'>
+      <div className=' h-[12vh] fixed top-0 left-0 right-0 shadow-md sm:shadow-none bg-light-gray-1 z-[999] '>
             
       
       <div className='flex sm:w-[95%] justify-between items-center w-[100vw]  pr-4 sm:px-0  h-full '>
