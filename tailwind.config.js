@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'header': "url('/src/assets/Bg2.png')",
+      
+      }
+    },
      colors: {
       transparent: 'transparent',
       current: 'currentColor',
