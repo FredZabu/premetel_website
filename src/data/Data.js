@@ -192,7 +192,7 @@ export const teamData=[
       id:'teamMember1'
     },
      {
-      name: 'Edna Kilusu',
+      name: 'Dr. Edna Kilusu',
       profession: 'Mental Health Specialist',
          image: doctor2,
       id:'teamMember2'

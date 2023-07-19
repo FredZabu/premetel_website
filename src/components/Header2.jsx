@@ -3,7 +3,7 @@ import nurse from "../assets/nurse2.png";
 import { Btn } from "./index";
 function Header2() {
   return (
-    <div className="header_parent my-[4rem] w-[90%] sm:w-[90%] mx-[auto] flex items-center justify-between flex-col sm:flex-row ">
+    <div className="header_parent sm:my-[4rem] w-[90%] sm:w-[90%] mx-[auto] flex items-center justify-between flex-col sm:flex-row ">
         <div className=" flex-[1]">
         <div className="header_text sm:w-[542px]  p-4 flex flex-col  sm:items-start  mt-5 sm:mt-0 relative  ">
           <p className="text-white text-[16px] font-bold tracking-[0.1px] leading-[24px]   mt-4 sm:mt-10 ">

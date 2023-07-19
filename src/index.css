@@ -79,6 +79,21 @@
     transform: translateX(-50%);
 }
 
+.footer1{
+ background: rgb(32,126,247);
+background: linear-gradient(90deg, rgba(32,126,247,0.6) 2%, rgba(201,43,39,0.6) 47%, rgba(32,126,247,0.6) 87%); 
+}
+
+.teamCard{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50%;
+    transition: all 0.5s ease-in-out;
+}
+.teamParent:hover > .teamCard{
+bottom: 0;
+}
 @media (max-width:640px) {
 
     .health_title::after {
