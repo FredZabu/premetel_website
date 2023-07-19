@@ -9,7 +9,7 @@ export default {
       backgroundImage: {
         'header': "url('/src/assets/Bg2.png')",
         'contact': "url('/src/assets/contactImage.jpg')",
-        'about': "url('/src/assets/bg-1.jpg')",
+        'aboutImage': "url('/src/assets/bg-1.jpg')",
       }
     },
      colors: {

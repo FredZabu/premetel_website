@@ -6,3 +6,4 @@ export { default as ValuesCard } from "./ValuesCard";
 export { default as KeyFocusHeader } from "./KeyFocusHeader";
 export { default as ScenarioCard } from "./ScenarioCard";
 export { default as ContactForm } from "./ContactForm";
+export { default as Loader } from "./Loader";

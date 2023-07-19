@@ -1,26 +1,47 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
-
-import { Navbar } from "./components/index.jsx";
-import { HomePage, AboutPage, Footer, ContactPage} from "./pages/index";
+import { Suspense, lazy, useEffect, useState } from 'react';
+import { Loader, Navbar } from "./components/index.jsx";
+import { Footer} from "./pages/index";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-
+const AboutPage = lazy(() => import('./pages/AboutPage.jsx'));
+const ContactPage = lazy(() => import('./pages/ContactPage.jsx'));
+const HomePage = lazy(() => import('./pages/HomePage.jsx'));
 function App() {
-	return (
-		<Router>
-			<div className="bg-light-gray-1 overflow-x-hidden font-title">
-                <Navbar />
-			    <Routes>
-			 		<Route path='/' element={ <HomePage /> } />
-					<Route path='/about' element={<AboutPage />} />
-					<Route path = '/contact' element = { <ContactPage />} />
-				</Routes>
-				 <Footer />
-		    </div>
+	const [loading, setLoading] = useState(true);
 
-		</Router>
-		
-	);
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 1000);
+  }, []);
+
+  return loading ? (
+    <Loader />
+  ) : (
+		  <Router>
+			  <Navbar />
+      <Routes>
+    
+        
+          <Route path="/" element={<HomePage />} />
+          <Route
+            path="/about"
+            element={
+              <Suspense fallback={<Loader />}>
+                <AboutPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <Suspense fallback={<Loader />}>
+                <ContactPage />
+              </Suspense>
+            }
+          />
+          
+			  </Routes>
+			  <Footer />
+    </Router>)
 }
 
 
