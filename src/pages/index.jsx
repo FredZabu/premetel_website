@@ -1,0 +1,9 @@
+export { default as HomePage } from "./HomePage";
+export { default as ServiceSection } from "./ServiceSection";
+export { default as AspirationSection } from "./AspirationSection";
+export { default as KeyFocusArea } from "./KeyFocusSection";
+export { default as AboutPage } from "./AboutPage";
+export { default as HowItWorks } from "./HowItWorks";
+export { default as SubscribeSection } from "./SubscribeSection";
+export { default as Footer } from "./Footer";
+export { default as ContactPage } from "./ContactPage";

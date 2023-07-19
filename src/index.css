@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.health_title {
+    position: relative;
+}
+
+.middleCard {
+    box-shadow: 0px 50px 80px -30px rgba(16, 13, 177, 0.20);
+}
+
+.health_title::after {
+    content: '';
+    height: 5px;
+    width: 50%;
+    background-color: #FF685B;
+    position: absolute;
+    left: 38%;
+    top: 100%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+}
+
+.angles {
+    width: 26px;
+    height: 26px;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-left: 5px solid #C92B27;
+    border-top: 5px solid #C92B27;
+}
+
+.angles2 {
+    width: 26px;
+    height: 26px;
+
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-right: 5px solid #100DB1;
+    border-bottom: 5px solid #100DB1;
+}
+
+.serviceBox1 {
+    border-radius: 100px 0px 0px 0px;
+    opacity: 0.15000000596046448;
+    background: #C92B27;
+}
+
+.serviceBox2 {
+    border-radius: 150px 0px 0px 0px;
+
+}
+
+.bad {
+    border-radius: 10px;
+    opacity: 0.20000000298023224;
+    box-shadow: 14px 20px 48px 0px rgba(25, 15, 44, 0.02);
+}
+
+.bgkla{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bgkla1{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width:640px) {
+
+    .health_title::after {
+
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+}
