@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'header': "url('/src/assets/Bg2.png')",
+        'header': "url('/src/assets/Bg2.jpg')",
         'contact': "url('/src/assets/contactImage.jpg')",
         'aboutImage': "url('/src/assets/bg-1.jpg')",
       }
@@ -23,7 +23,9 @@ export default {
        'white': '#FFFFFF',
        'main-color': '#207ef7',
        'third-dark': '#06152B',
-      'p-text': '#788B9A',
+       'p-text': '#333',
+       'p-text-alt': '#788B9A',
+      'hover-color': 'rgb(236,100,76)',
     },
      fontFamily: {
      

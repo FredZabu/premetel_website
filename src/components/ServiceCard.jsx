@@ -8,7 +8,7 @@ function ServiceCard(props) {
           <div className="icon w-[72px]    "><img src={iconImage} alt="" /></div>
           <h1 className={`${customStyle}  font-bold text-third-dark tracking-[0.2px]  mt-5 `}>{textTitle}</h1>
           <p className="  leading-[30px] tracking-[0.2px] text-p-text mt-5">{descript}</p>
-          <button className= {` ${flags=='aspiration'?'hidden':''} mt-10  ${id==="keyFocus2" || flags==='service' ? 'bg-btn-color text-white' : 'border-[1px] border-[#DDDDE8] text-p-text'}  font-[700] text-[14px] tracking-[0.2px] leading-[22px] py-[14px] px-[18px] rounded-[5px] flex items-center gap-4`}> <span>Learn more</span> <span className="inline-block p-[1px]"> {id==="keyFocus2" || flags==='service' ? <img src={arrow} alt=""  /> : <AiOutlineArrowRight color="#788B9A" /> } </span> </button>
+          <button className= {` ${flags=='aspiration'?'hidden':''} mt-10  ${id==="keyFocus2" || flags==='service' ? 'bg-btn-color text-white' : 'border-[1px] border-[#DDDDE8] text-p-text'} hover:bg-hover-color hover:text-white font-[700] text-[14px] tracking-[0.2px] leading-[22px] py-[14px] px-[18px] rounded-[5px] flex items-center gap-4`}> <span>Learn more</span> <span className="inline-block p-[1px]"> {id==="keyFocus2" || flags==='service' ? <img src={arrow} alt=""  /> : <AiOutlineArrowRight color="#788B9A" /> } </span> </button>
     </div>
   )
 }

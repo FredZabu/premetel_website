@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 const AboutPage = lazy(() => import('./pages/AboutPage.jsx'));
 const ContactPage = lazy(() => import('./pages/ContactPage.jsx'));
 const HomePage = lazy(() => import('./pages/HomePage.jsx'));
+const ServicePage = lazy(() => import('./pages/ServicePage.jsx'));
 function App() {
 	const [loading, setLoading] = useState(true);
 
@@ -34,6 +35,14 @@ function App() {
             element={
               <Suspense fallback={<Loader />}>
                 <AboutPage />
+              </Suspense>
+            }
+          />
+                    <Route
+            path="/services"
+            element={
+              <Suspense fallback={<Loader />}>
+                <ServicePage />
               </Suspense>
             }
           />

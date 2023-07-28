@@ -10,19 +10,21 @@ import Header4 from "./Header4";
 
 
 const Header = () => (
-  <Carousel autoplay>
-    <div className="  mt-[12vh] w-[100vw] relative h-[70vh] sm:h-[90vh] py-10 overflow-y-hidden  bg-header  bg-cover  bg-no-repeat ">
-      <Header1 />
-    </div>
-    <div className="  mt-[12vh] w-[100vw] h-[70vh] sm:h-[90vh] py-10 overflow-y-hidden  bg-header  bg-cover  bg-no-repeat">
-      <Header2 />
-    </div>
-    <div className="  mt-[12vh] w-[100vw] h-[70vh] sm:h-[90vh] py-10 overflow-y-hidden  bg-header  bg-cover  bg-no-repeat">
-      <Header3 />
-    </div>
-    <div className="  mt-[12vh] w-[100vw] h-[70vh] sm:h-[90vh] py-10 overflow-y-hidden  bg-header  bg-cover  bg-no-repeat">
+  <Carousel autoplay dots={false} effect='fade'>
+
+        <div className="   w-[100vw] h-[50vh] sm:h-[100vh]  overflow-y-hidden  bg-header  bg-cover  bg-no-repeat">
       <Header4 />
     </div>
+               <div className="   w-[100vw] h-[50vh] sm:h-[100vh]  overflow-y-hidden  bg-header  bg-cover  bg-no-repeat">
+      <Header3 />
+    </div>
+    <div className="w-[100vw]  h-[50vh] sm:h-[100vh]  overflow-y-hidden  bg-header  bg-cover  bg-no-repeat ">
+      <Header1 />
+    </div>
+    <div className="   w-[100vw] h-[50vh] sm:h-[100vh]  overflow-y-hidden  bg-header  bg-cover  bg-no-repeat">
+      <Header2 />
+    </div>
+
   </Carousel>
 );
 export default Header;

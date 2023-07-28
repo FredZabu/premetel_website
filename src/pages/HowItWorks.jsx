@@ -26,7 +26,7 @@ function HowItWorks() {
           
           <div className="ml-1">
             <h1 className="text-xl  font-title font-[600] text-text-color  tracking-[0.2px] mt-5 text-start ">{title}</h1>
-            <p className="sm:text-[18px] font-title font-medium leading-[30px] tracking-[0.2px] text-second-text-color ">{ description}</p>
+            <p className="sm:text-[18px] font-title font-medium leading-[30px] tracking-[0.2px] text-p-text">{ description}</p>
           </div>
         </div>
       })}

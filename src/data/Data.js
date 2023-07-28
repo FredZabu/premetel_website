@@ -205,3 +205,102 @@ export const teamData=[
     }
   ];
 
+
+export const UrgentCare = [
+  {
+    key: '1',
+    name: 'Cold & Flu',
+    disease: 'Cold and flu, Cough, Fever, Nausea & Vomiting, Asthma, Sinus infection, and Headaches.'
+  },
+   {
+    key: '2',
+    name: 'Skin Conditions',
+    disease: 'Acne, Rashes, Sunburn, Cellulitis and Hives'
+  },
+    {
+    key: '3',
+    name: "Women's Health",
+    disease: 'UTIs, Fatigue, Migraines, and Yeast Infections.'
+  },
+     {
+    key: '4',
+    name: "Men's Health",
+    disease: 'Joint Pains, STIs, and Stress Management'
+  },
+      {
+    key: '5',
+    name: 'Allergies',
+    disease: 'Common Allergies, Skin Rashes, Seasonal Allergies, and Allergic Sinusitis.'
+  },
+       {
+    key: '6',
+    name: 'Headache',
+    disease: 'Tension, Nausea, Migraines, Sinus Headaches, Stress, and Anxiety.'
+    }
+  ]
+
+  export const PreventiveHealth = [
+  {
+    key: '1',
+    name: 'Wellness Visits',
+    disease: 'Lifestyle Counseling, Labs and Screenings, and Smoking Cessation.'
+  },
+   {
+    key: '2',
+    name: 'Family Medicine',
+    disease: 'Vitamin Deficiency, Pediatric Issues, and Immunization Plans'
+  },
+    {
+    key: '3',
+    name: "Women’s Wellness",
+    disease: 'Heart Health, Weight Management, Skin Conditions, Labs and Screening, and Emotional Wellness.'
+  },
+     {
+    key: '4',
+    name: "Men’s Wellness",
+    disease: 'Behavioral Health Screening, Heart Health, Prostate Cancer Risk Counseling, Pre-Diabetes Screening, and Metabolic Syndromes'
+  },
+      {
+    key: '5',
+    name: 'Diet and Nutrition',
+    disease: 'Weight Management, Vitamin Deficiencies, Obesity and Metabolic Syndromes.'
+  },
+       {
+    key: '6',
+    name: 'Medication Management',
+    disease: 'Dosage Changes, Medication Interactions, Medication List Review, and Refills.'
+    }
+  ]
+
+    export const MentalHealth = [
+  {
+    key: '1',
+    name: 'Anxiety',
+    disease: 'Stress, Workplace Issues, Headaches, Anxiety, Panic Attacks, Insomnia, and Restlessness'
+  },
+   {
+    key: '2',
+    name: 'Depression',
+    disease: 'Bipolar, Low Mood, Fatigue, Mood Swings, and Chronic Depression'
+  },
+    {
+    key: '3',
+    name: "Postpartum",
+    disease: 'Loss & Miscarriages, Family and Relationships, Anxiety and Stress.'
+  },
+     {
+    key: '4',
+    name: "Relationships",
+    disease: 'Behavioral Therapy, Anger Management, Depression and Anxiety, and Stress'
+  },
+      {
+    key: '5',
+    name: 'Trauma and Loss',
+    disease: 'Physical Abuse, PTSD, Grief, Trauma and Loss'
+  },
+       {
+    key: '6',
+    name: 'Screenings',
+    disease: 'PTSD, Substance Abuse, Anxiety, and Depression'
+    }
+  ]

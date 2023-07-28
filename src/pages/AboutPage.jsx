@@ -6,13 +6,7 @@ import { valuesData } from "../data/Data.js";
 function AboutPage() {
   return (
     <div className=" mt-[12vh] w-[100vw] ">
-            <div className="h-[50vh] sm:h-[70vh] bg-aboutImage  bg-cover bg-center  bg-no-repeat">
-        <div className="h-full bgkla1 grid place-items-center">
-           <h1 className=" text-4xl sm:text-7xl font-title font-bold text-white sm:leading-[67px] tracking-[0.2px]  text-start ">
-           About Us
-          </h1>
-        </div>
-      </div>
+           
 
       <div className=" mt-20 mx-auto w-[90%] ">
            

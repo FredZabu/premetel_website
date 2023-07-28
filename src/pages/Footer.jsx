@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 
 function Footer() {
     return (
-        <div>
+        <div className="mt-20"> 
       <div className="border-t-[1px] border-text-color py-10 footer1">
       <div className="flex flex-col  sm:flex-row w-[90%] mx-auto">
           <div className="flex-[1.5]">

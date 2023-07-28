@@ -3,39 +3,40 @@ import nurse from "../assets/nurse5.png";
 import { Btn } from "./index";
 function Header3() {
   return (
-    <div className="header_parent w-[90%] sm:my-[2rem] sm:w-[90%] mx-[auto] flex items-center flex-col sm:flex-row justify-between ">
-        <div className="flex-[1]">
-        <div className="header_text  p-4 flex flex-col  sm:items-start  mt-5 sm:mt-0 relative  ">
-          <p className="text-white text-[16px] font-bold tracking-[0.1px] leading-[24px]   mt-4 sm:mt-10 ">
-            Join Us
-          </p>
-          <h1 className=" text-4xl sm:text-5xl font-title font-bold text-white sm:leading-[67px] tracking-[0.2px]  mt-5 text-start ">
-           Customized<br />Telehealth consultations<br />for you
-          </h1>
-         
-          <div className="banner-btn px-0 mt-0 sm:mt-5 flex justify-between items-center ">
+  <div className="bgkla  sm:h-[100vh]  ">
+
+      <div className=" header_parent w-[90%] h-full  sm:w-[80%] bg-transparent  relative mx-auto ">
+        
+        
+          <div className="header_text   p-4 flex flex-col items-center  sm:items-start  mt-0  sm:mt-0 sm:w-[50%] sm:absolute sm:left-0 sm:top-[50%] sm:translate-y-[-50%] ">
+           
+           
+            <h1 className=" text-5xl sm:text-6xl font-title font-bold text-white leading-[60px] sm:leading-[70px] tracking-[0.2px]  mt-10 text-center sm:text-start ">
+            Customized Telehealth consultations<br />for you
+            </h1>
+            <div className="banner-btn px-0 mt-2 sm:mt-10 mb-5 flex justify-between items-center ">
             <Btn styles="bg-btn-color text-white py-[15px] px-[25px]" texts="Book Appointment" />
             
-          </div>
+            </div>
 
-          <div className="angles"></div>
-          <div className="angles2"></div>
           </div>
-          
-</div>
+           
+        
 
-        <div className="header_image hidden sm:block mt-4 sm:mt-0  h-[500px] flex-[1]    ">
+        <div className="header_image hidden sm:block w-[60%] right-0 absolute top-0 bottom-0 ">
+         
          
             <img
               src={nurse}
               alt="image of a nurse"
-              className="w-full h-full"
+              className=" h-full "
             />
          
         
         </div>
 
       </div>
+</div>
   )
 }
 

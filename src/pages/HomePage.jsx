@@ -4,7 +4,7 @@ import { KeyFocusArea, ServiceSection, AspirationSection, HowItWorks, SubscribeS
 function HomePage() {
   return (
       <div>
-      <div className="">
+      <div className="mt-[12vh]">
         <Header />
       </div>
 			<KeyFocusArea />
