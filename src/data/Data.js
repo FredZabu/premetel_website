@@ -18,38 +18,41 @@ import servedNo from "../assets/servedIcon.png";
 import phone from "../assets/phone.png";
 import chain from "../assets/chain.png";
 import timeIcon from "../assets/time.svg";
-
+import service1 from "../assets/service1.png";
+import service2 from "../assets/service2.png";
+import service3 from "../assets/service3.png";
+import service4 from "../assets/service4.png";
 
 export const serviceData = [
     {
-        icon: serviceIcon1,
+        icon: service1,
         title: 'Laboratory',
         description: ' Through our high-quality, experienced partners, we offer you reliable laboratory services administered with the latest technologies.',
         id: 'service1',
-        flag:'service'
+        flag:1
     },
    
     {
-        icon: serviceIcon2,
+        icon: service2,
         title: 'Customized Tele - Consultations',
         description: 'With 24/7 access to highly qualified doctors, therapists,psychiatrists, and psychologists, care is always assured. Our staff members are always ready',
         id: 'service2',
-        flag:'service'
+        flag:2
   },
      {
-        icon: serviceIcon3,
+        icon: service3,
         title: 'Free Follow up Appointments.',
         description: 'After your prescriptions, our doctors will book a free follow-up appointment with you to ensure that you are well.',
         id: 'service3',
-        flag:'service'
+        flag:3
     },
     
     {
-        icon: serviceIcon4,
+        icon: service4,
         title: 'Prescriptions & Free Delivery',
         description: ' We maximize convenience by digitally issuing prescriptions through your mobile device. We offer our customers a remote visit to our pharmacies',
         id: 'service4',
-        flag:'service'
+        flag:4
     },
 ]
 

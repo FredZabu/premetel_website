@@ -7,3 +7,4 @@ export { default as KeyFocusHeader } from "./KeyFocusHeader";
 export { default as ScenarioCard } from "./ScenarioCard";
 export { default as ContactForm } from "./ContactForm";
 export { default as Loader } from "./Loader";
+export { default as ServiceSectionCard } from "./ServiceSectionCard";

@@ -12,18 +12,18 @@ import Header4 from "./Header4";
 const Header = () => (
   <Carousel autoplay dots={false} effect='fade'>
 
-        <div className="   w-[100vw] h-[50vh] sm:h-[100vh]  overflow-y-hidden  bg-header  bg-cover  bg-no-repeat">
+    <div className="   w-[100vw] h-[50vh] sm:h-[100vh]  overflow-y-hidden  ">
       <Header4 />
     </div>
-               <div className="   w-[100vw] h-[50vh] sm:h-[100vh]  overflow-y-hidden  bg-header  bg-cover  bg-no-repeat">
+   {/* <div className="   w-[100vw] h-[50vh] sm:h-[100vh]  overflow-y-hidden  ">
       <Header3 />
     </div>
-    <div className="w-[100vw]  h-[50vh] sm:h-[100vh]  overflow-y-hidden  bg-header  bg-cover  bg-no-repeat ">
+    <div className="w-[100vw]  h-[50vh] sm:h-[100vh]  overflow-y-hidden  ">
       <Header1 />
     </div>
-    <div className="   w-[100vw] h-[50vh] sm:h-[100vh]  overflow-y-hidden  bg-header  bg-cover  bg-no-repeat">
+    <div className="   w-[100vw] h-[50vh] sm:h-[100vh]  overflow-y-hidden ">
       <Header2 />
-    </div>
+</div> */}
 
   </Carousel>
 );

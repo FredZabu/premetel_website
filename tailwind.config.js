@@ -23,13 +23,17 @@ export default {
        'white': '#FFFFFF',
        'main-color': '#207ef7',
        'third-dark': '#06152B',
-       'p-text': '#333',
        'p-text-alt': '#788B9A',
-      'hover-color': 'rgb(236,100,76)',
+       'hover-color': 'rgb(236,100,76)',
+       'header-color': 'rgb(55, 97, 152)',
+       'line-color': '#e6f3fc',
+       'text-color2': '#3763a9',
+      'p-text': '#4a245a'
     },
      fontFamily: {
      
-      'title': ['Nunito', 'sans-serif'],
+       'title': ['Noto Serif Georgian', 'serif'],
+       'para': ['Quicksand', 'sans-serif'],
       
     },
   },

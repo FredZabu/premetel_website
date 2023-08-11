@@ -65,7 +65,12 @@
 
 .bgkla{
     height: 100%;
-    background-color: rgba(56, 96, 150, 0.9);
+ background: rgb(55,97,152);
+background: linear-gradient(125deg, rgba(55,97,152,1) 0%, rgba(55,97,152,1) 55%, rgba(55,97,152,1) 61%, rgb(116, 113, 113) 78%, rgba(55,97,152,1) 89%, rgba(55,97,152,1) 100%); 
+}
+.bg5{
+     background: rgb(55,97,152);
+background: radial-gradient(circle, rgba(232,228,228,0.2) 0%, rgba(55,97,152,1) 28%, rgba(55,97,152,1) 42%); 
 }
 
 .bgkla1{
