@@ -1,6 +1,7 @@
 import { MdEmail, MdLocationPin } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
 import { ContactForm } from "../components";
+import nurse from "../assets/nurse4.png";
 
 function ContactPage() {
   return (
@@ -42,6 +43,12 @@ function ContactPage() {
           </div>
         </div>
         <ContactForm />
+      </div>
+
+
+      <div className="w-[100vw] h-[100vh] border-[2px solid red]">
+
+        <img src={nurse} alt="" className="border-2 w-[50%]" />
       </div>
     </div>
   )

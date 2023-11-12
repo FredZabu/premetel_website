@@ -66,7 +66,10 @@
 .bgkla{
     height: 100%;
  background: rgb(55,97,152);
-background: linear-gradient(125deg, rgba(55,97,152,1) 0%, rgba(55,97,152,1) 55%, rgba(55,97,152,1) 61%, rgb(116, 113, 113) 78%, rgba(55,97,152,1) 89%, rgba(55,97,152,1) 100%); 
+
+}
+.footer-bg-color{
+     background: rgb(55,97,152);
 }
 .bg5{
      background: rgb(55,97,152);
@@ -92,10 +95,6 @@ background: radial-gradient(circle, rgba(232,228,228,0.2) 0%, rgba(55,97,152,1) 
     transform: translateX(-50%);
 }
 
-.footer1{
- background: rgb(32,126,247);
-background: linear-gradient(90deg, rgba(32,126,247,0.6) 2%, rgba(201,43,39,0.6) 47%, rgba(32,126,247,0.6) 87%); 
-}
 
 .teamCard{
     position: absolute;

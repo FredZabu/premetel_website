@@ -24,7 +24,7 @@ function Navbar() {
             
       
       <div className='flex sm:w-[80%] justify-between items-center w-[100vw]  pr-4 sm:px-0  h-full  mx-auto'>
-                <div className="sm:flex-[1]"><img src={logo} alt="" /></div>
+                <div className="sm:flex-[1] flex flex-row items-center"><img src={logo} className='w-[180px]  ' alt="" /> </div>
                 <div className='flex justify-end flex-[2] '>
           <div className={` ${click? 'flex' : 'hidden'} sm:flex   items-center flex-col sm:flex-row sm:static absolute top-[12vh] left-0 right-0 pb-4 sm:pb-0 bg-text-color sm:bg-transparent  h-[50vh]  space-x-12`} >
               
