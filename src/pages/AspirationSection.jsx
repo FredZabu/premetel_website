@@ -12,10 +12,10 @@ function AspirationSection() {
               <img src={keyImage1} alt="" className="h-full" />
           </div>
           <div className="flex flex-col sm:flex-row sm:items-center  w-[90%] mx-auto">
-              <h1 className="flex-[1] text-2xl sm:text-4xl font-title font-normal text-text-color sm:leading-[67px] tracking-[0.2px] sm:w-[542px] sm:mt-5 mt-5 text-start ">
-                  Our <span className=" text-btn-color">Aspirations</span>
+              <h1 className="flex-[1] text-2xl sm:text-4xl font-title font-bold text-text-color2 sm:leading-[67px] tracking-[0.2px] sm:w-[542px] sm:mt-5 mt-5 text-start ">
+                  Our <span className=" text-text-color2">Aspirations</span>
               </h1>
-              <p className="flex-[1] text-p-text mt-5 sm:mt-0 font-para font-normal">Primetel believes in challenging the conventional healthcare  systems with the ever-expanding technological advancements in providing efficient, customized, and convenient healthcare services to people in rural areas</p>
+              <p className="flex-[1] text-p-text sm:text-xl mt-5 sm:mt-0 font-para font-bold">Primetel believes in challenging the conventional healthcare  systems with the ever-expanding technological advancements in providing efficient, customized, and convenient healthcare services to people in rural areas</p>
           </div>
           <div className="absolute top-0 right-0 bottom-0 hidden sm:block">
               <img src={keyImage2} alt="" className="h-full"  />
@@ -34,7 +34,7 @@ function AspirationSection() {
           
           <div className="ml-0 sm:ml-1">
             <h1 className="text-xl sm:text-3xl font-title font-bold text-text-color2  tracking-[0.2px] mt-5 text-start ">{number}</h1>
-            <p className="sm:text-[18px] font-para font-normal sm:leading-[30px] tracking-[0.2px] text-second-text-color2 ">{ title}</p>
+            <p className="sm:text-[18px] font-para font-medium sm:leading-[30px] tracking-[0.2px]  text-p-text ">{ title}</p>
           </div>
         </div>
       })}

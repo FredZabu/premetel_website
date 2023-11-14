@@ -111,21 +111,21 @@ export const aspirationData = [
 export const appreciationData = [
   {
     icon: servedNo,
-    number: '1K',
+    number: '1M',
     title: 'Patients Served',
     customStyle:'bg-[#C92B27]',
     id:'appreciation1'
   },
   {
     icon: pharmaciesNo,
-    number: '200',
+    number: '50',
     title: 'Pharmacies on our platform',
     customStyle:'bg-[#FF7E07]',
     id:'appreciation2'
   },
   {
     icon: doctorNo,
-    number: '10K',
+    number: '100+',
     title: 'Doctors on our platform',
     customStyle:'bg-[#2FE5A7]',
     id:'appreciation3'

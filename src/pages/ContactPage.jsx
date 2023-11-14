@@ -1,7 +1,7 @@
 import { MdEmail, MdLocationPin } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
 import { ContactForm } from "../components";
-import nurse from "../assets/nurse4.png";
+
 
 function ContactPage() {
   return (
@@ -30,7 +30,7 @@ function ContactPage() {
             </div>
             <h1 className=" text-2xl  font-title font-bold text-third-dark tracking-[0.2px]  text-start mb-2">Address</h1>
             <p className="text-p-text mt-1 ">Monduli, Arusha</p>
-            <p className="text-p-text mt-1 ">Tanzania, East Afric</p>
+            <p className="text-p-text mt-1 ">Tanzania, East Africa</p>
           </div>
 
                     <div className=" bg-faded-color sm:mt-0 mt-5 w-[300px] rounded-md flex flex-col items-center py-5 px-10">
@@ -38,18 +38,13 @@ function ContactPage() {
               <BsTelephoneFill size={30} color={'#207ef7'} />
             </div>
             <h1 className=" text-2xl  font-title font-bold text-third-dark tracking-[0.2px]  text-start mb-2">Phone</h1>
-            <p className="text-p-text mt-1 ">+255744549721</p>
-            <p className="text-p-text mt-1 ">+250783784394</p>
+            <p className="text-p-text mt-1 ">+255 744 549 721</p>
+            <p className="text-p-text mt-1 ">+250 783 784 394</p>
           </div>
         </div>
         <ContactForm />
       </div>
 
-
-      <div className="w-[100vw] h-[100vh] border-[2px solid red]">
-
-        <img src={nurse} alt="" className="border-2 w-[50%]" />
-      </div>
     </div>
   )
 }

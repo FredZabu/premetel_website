@@ -78,7 +78,7 @@ background: radial-gradient(circle, rgba(232,228,228,0.2) 0%, rgba(55,97,152,1) 
 
 .bgkla1{
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(150, 100, 100, 0.8);
 }
 .bgkla2{
     height: 100%;
@@ -95,6 +95,14 @@ background: radial-gradient(circle, rgba(232,228,228,0.2) 0%, rgba(55,97,152,1) 
     transform: translateX(-50%);
 }
 
+.subscribe{
+    position: absolute;
+    right: 50%;
+    bottom:100%;
+    transform: translate(50%, 50%);
+    background-color: rgb(55,97,152);;
+
+}
 
 .teamCard{
     position: absolute;
