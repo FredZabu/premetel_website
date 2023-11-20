@@ -1,5 +1,4 @@
 export { default as Navbar } from "./Navbar";
-export { default as Header } from "./Header";
 export { default as Btn } from "./Btn";
 export { default as ServiceCard } from "./ServiceCard"
 export { default as ValuesCard } from "./ValuesCard";
@@ -8,3 +7,4 @@ export { default as ScenarioCard } from "./ScenarioCard";
 export { default as ContactForm } from "./ContactForm";
 export { default as Loader } from "./Loader";
 export { default as ServiceSectionCard } from "./ServiceSectionCard";
+export { default as Slider } from "./Slider";

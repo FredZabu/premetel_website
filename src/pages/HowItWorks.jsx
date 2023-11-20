@@ -1,5 +1,5 @@
 import howBg from "../assets/howBg.png";
-import how from "../assets/nurse4.png";
+import how from "../assets/nurse44.png";
 import { howData } from "../data/Data";
 function HowItWorks() {
   return (
@@ -7,7 +7,7 @@ function HowItWorks() {
           {/* <div className="z-0 hidden  w-[50%] h-[50%] sm:grid absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] opacity-50 place-items-center"  >
               <img src={howBg} alt="" className="h-[100%] "  />
           </div> */}
-          <div className=" static sm:absolute sm:top-0 sm:left-0 sm:right-0 sm:bottom-0 flex justify-between  h-full">
+          <div className=" static sm:absolute sm:top-0 sm:left-0 sm:right-0 sm:bottom-0 flex justify-between items-center h-full">
               <div className="flex-[1]">
                   <h1 className=" text-xl sm:text-4xl font-title font-[600] text-text-color2  sm:leading-[65px] tracking-[0.2px] sm:w-[542px] sm:mt-5 mt-5 text-start ">
                   Get 24/7 Care Right From<br /><span className="text-btn-color ">Your Phone</span>
@@ -32,7 +32,7 @@ function HowItWorks() {
       })}
       </div>
               </div>
-              <div className="h-[100%]  flex-[1] hidden sm:block"><img src={how} alt="" className="h-full" /></div>
+              <div className="h-[100%]  flex-[1]  hidden sm:grid place-items-center"><img src={how} alt="" className="h-[80%]" /></div>
           </div>
     </div>
   )

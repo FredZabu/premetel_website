@@ -19,7 +19,7 @@ function Header4() {
             </h1>
            </motion.div>
             
-            <motion.div animate={{y:0, opacity:1}} initial={{y:50, opacity:0}} transition={{type:"tween", duration:1 ,delay:2.8}} className=" px-0 mt-2 sm:mt-10 mb-5 ">
+            <motion.div animate={{y:0, opacity:1}} initial={{y:10, opacity:0}} transition={{type:"tween", duration:0.7 ,delay:2}} className=" px-0 mt-2 sm:mt-10 mb-5 ">
             <Btn styles="bg-btn-color text-white py-[15px] px-[25px]" texts="Book Appointment" />
             
             </motion.div>
@@ -28,13 +28,13 @@ function Header4() {
            
         
 
-        <motion.div animate={{opacity:1}} initial={{opacity:0}} transition={{type:"tween", duration:1 }} className="header_image hidden sm:block w-[50%] right-0 absolute top-0 bottom-0    ">
-          <div className="bg-btn-color cliped h-[240px] w-80 grid place-items-center mt-[-70px]   sm:text-5xl font-title font-bold text-white  tracking-[0.2px] mx-auto"><h1>NOW ON</h1></div>
+        <motion.div animate={{opacity:1}} initial={{opacity:0}} transition={{type:"tween", duration:1 }} className="header_image hidden sm:block w-[50%] right-0 absolute top-[5%] bottom-0 ">
+         
          
             <img
               src={nurse}
               alt="image of a nurse"
-              className=" mt-[-120px]  w-[100%] "
+              className=" h-[100%]  mx-auto"
               
             />
          

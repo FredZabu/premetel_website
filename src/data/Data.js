@@ -1,4 +1,7 @@
-
+import nurse3 from "../assets/nurse5.png";
+import nurse4 from "../assets/nurse4.png";
+import nurse2 from "../assets/nurse3.png";
+import nurse1 from "../assets/nurse2.png";
 import serviceIcon1 from "../assets/serviceIcon1.png";
 import serviceIcon2 from "../assets/serviceIcon2.png";
 import serviceIcon3 from "../assets/serviceIcon3.png";
@@ -306,4 +309,24 @@ export const UrgentCare = [
     name: 'Screenings',
     disease: 'PTSD, Substance Abuse, Anxiety, and Depression'
     }
+  ]
+
+
+export const sliderData = [
+  {
+    text: "Access Primetel’s< br />Services on USSD ",
+    sliderImage: nurse4
+    },
+  {
+    text: "Customized Telehealth<br />consultation",
+    sliderImage: nurse3
+    },
+  {
+    text: "Access To<br />Laboratory Services",
+    sliderImage: nurse2
+    },
+  {
+    text: "Pharmacy Services From Home",
+    sliderImage: nurse1
+    },
   ]
