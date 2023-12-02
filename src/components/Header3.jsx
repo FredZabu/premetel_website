@@ -13,7 +13,7 @@ function Header3() {
            
            <motion.div animate={{x:0,opacity:1}} initial={{x:50, opacity:0}} transition={{type:"tween", duration:1 ,delay:1}}  >
             <h1  className=" sm:text-6xl font-title font-medium text-white  leading-[60px] sm:leading-[90px] tracking-[0.2px] text-center  mt-10 sm:text-start ">
-             Customized Telehealth<br />consultation 
+             Customized Telehealth<br />Consultation 
             </h1>
            </motion.div>
             

@@ -8,3 +8,6 @@ export { default as ContactForm } from "./ContactForm";
 export { default as Loader } from "./Loader";
 export { default as ServiceSectionCard } from "./ServiceSectionCard";
 export { default as Slider } from "./Slider";
+export { default as DiseaseCard } from "./DiseaseCard";
+export { default as PreventiveCard } from "./PreventiveCard";
+export { default as MentalCard } from "./MentalCard";

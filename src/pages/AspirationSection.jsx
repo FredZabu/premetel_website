@@ -1,26 +1,16 @@
 
-import keyImage1 from "../assets/keyImage1.png";
-import keyImage2 from "../assets/keyImage2.png";
 import { aspirationData, appreciationData } from "../data/Data.js";
 import { ScenarioCard } from "../components";
 
 function AspirationSection() {
   return (
     <div className="w-[90vw] mt-10 mx-auto sm:mt-40">
-         <div className="relative mb-10 ">
-          <div className="absolute top-0 left-0 h-[40%] sm:h-[auto] sm:bottom-0 md: ">
-              <img src={keyImage1} alt="" className="h-full" />
-          </div>
-          <div className="flex flex-col sm:flex-row sm:items-center  w-[90%] mx-auto">
-              <h1 className="flex-[1] text-2xl sm:text-4xl font-title font-bold text-text-color2 sm:leading-[67px] tracking-[0.2px] sm:w-[542px] sm:mt-5 mt-5 text-start ">
-                  Our <span className=" text-text-color2">Aspirations</span>
+              <div className="w-[80%] mx-auto mb-10">
+              <h1 className=" text-center text-[50px] text-text-color2 font-title font-medium">
+                  Our Aspirations
               </h1>
-              <p className="flex-[1] text-p-text sm:text-xl mt-5 sm:mt-0 font-para font-bold">Primetel believes in challenging the conventional healthcare  systems with the ever-expanding technological advancements in providing efficient, customized, and convenient healthcare services to people in rural areas</p>
-          </div>
-          <div className="absolute top-0 right-0 bottom-0 hidden sm:block">
-              <img src={keyImage2} alt="" className="h-full"  />
-          </div>
-      </div>
+              <h1  className="sm:leading-[35px] tracking-[0.2px] text-p-text text-xl mt-5 sm:mt-0 font-para font-medium text-center ">Primetel believes in challenging the conventional healthcare  systems with the ever-expanding technological advancements in providing efficient, customized, and convenient healthcare services to people in rural areas</h1>
+        </div>
       
       <div className="flex justify-between sm:mt-16 ">
         {appreciationData.map(({ icon, number, title, customStyle, id }) => {

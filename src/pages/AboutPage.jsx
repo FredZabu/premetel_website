@@ -1,87 +1,125 @@
-import { ValuesCard } from "../components/index"
-import aboutImage from "../assets/about.png"
-import aboutImage2 from "../assets/about2.png"
-import Team from "../components/team/team";
-import { valuesData } from "../data/Data.js";
+import DoctorImage from "../assets/storyImage1.png";
+import image1 from "../assets/teamImage/image1.png";
+import image2 from "../assets/teamImage/image2.png";
+import image3 from "../assets/teamImage/image3.png";
+import { IoDiamondOutline } from "react-icons/io5";
+import { MdOutlinePublishedWithChanges } from "react-icons/md";
+import { FaHeartPulse } from "react-icons/fa6";
+import { GiRomanToga } from "react-icons/gi";
 function AboutPage() {
   return (
-    <div className=" mt-[12vh] w-[100vw] ">
+    <div className=" mt-[12vh] w-[100vw] bg-[#fffcf1]">
            
+      <div className="h-[80vh] w-[100vw] bg-[#376198]  ">
 
-      <div className=" mt-20 mx-auto w-[90%] ">
-           
-        <div className="flex  flex-col sm:flex-row items-center">
-          <div className="flex-[1]">
-          <div className=" w-[300px] rounded-full bg-btn-color overflow-hidden ">
-          <img src={aboutImage} alt="Image of a smiling woman talking on phone"  />
-          </div>
-          </div>
+        <div className="w-[90%] mx-auto flex justify-between pt-10">
+          <div className="w-[50%]">
 
-
-          <div className="flex-[1] ">
-                <h4 className="text-2xl mb-2 font-bold text-text-color  tracking-[0.2px] text-center ">Our Mission</h4>
-           
-            <div className=" mt-5 flex sm:justify-end ">
-              <p className="text-[15px] sm:w-[80%] tracking-[0.2px] text-second-text-color text-center sm:text-start">
-              Primetel believes in challenging the conventional healthcare
-                systems with the ever-expanding technological advancements in
-                providing efficient, customised, and convenient healthcare
-                services to people in rural areas.
-
-          How? By tapping the power of technology in radiating access to
-                healthcare services across each household regardless of
-                location, income level, or health condition.
-
-            We seek to join other innovative medical institutions in
-                providing our customers with the safest and most efficient
-                medical assistance. You are the reason we operate.
-
-                 </p>
-            </div>
-        
-          </div>   
-        </div>
-
-        <div className="flex flex-col sm:flex-row mt-10 items-center">
- 
-        <div className="sm:mt-0 order-2 sm:order-1 flex-[1]">
-            <h4 className="text-2xl font-bold text-text-color  tracking-[0.2px] text-center mb-2 sm:w-[80%]">Who we are</h4>
-
-           <p className="text-[14px]  sm:w-[80%] tracking-[0.2px] text-second-text-color mt-5 text-center sm:text-start ">
-              Access to high-quality healthcare services, particularly in rural areas, has highly been jeopardised and turned into a “privilege.” We are keen on harnessing technological advancements into powerful medical tools that challenge how we define high-quality healthcare services.
-
-             We provide our customers with the safest and most affordable medical services while offering personalised consultations during and after prescriptions.
-
-            We combine the latest technology with the
+            <div>
+            <h1 className="text-[40px]  font-title font-semibold sm:leading-[45px] tracking-[0.2px] mb-5   text-[orange]">Our Story<span className="text-light-gray-1">...</span></h1>
+            <p className="mt-3 font-para font-medium text-base tracking-[0.2px] text-light-gray-1">Access to high-quality healthcare services, particularly in rural areas, has highly been jeopardised and turned into a “privilege.” We are keen on harnessing technological advancements into powerful medical tools that challenge how we define high-quality healthcare services.
+</p>
+            
+            <p className="mt-5 font-para font-medium text-base tracking-[0.2px] text-light-gray-1"> We provide our customers with the safest and most affordable medical services while offering personalised consultations during and after prescriptions.
+            </p>
+            <p className="mt-5 font-para font-medium text-base tracking-[0.2px] text-light-gray-1">We combine the latest technology with the
                 knowledge and expertise of our medical staff to make healthcare
                 more affordable, accessible, and inclusive to everyone in the
-              rural areas of Tanzania.
-            We strongly believe that being sick is complicated; thus, accessing medical services shouldn’t be.
+                rural areas of Tanzania.</p>
+              <p className="mt-5 font-para font-medium text-base tracking-[0.2px] text-light-gray-1">We strongly believe that being sick is complicated; thus, accessing medical services shouldn’t be.</p>
+              </div>
 
-                 </p>
+            
           </div>
-          <div className="flex-[1] order-1 sm:order-2 flex justify-end">
-          <div className="   w-[300px] rounded-full bg-main-color overflow-hidden  ">
-          <img src={aboutImage2} alt="Image of a smiling woman talking on phone"  />
-            </div>
-            </div>
+  
+          <div className="inline-grid place-items-center mt-5  overflow-hidden ">
+            <img src={DoctorImage} alt="" className=" rounded-3xl " />
+          </div>          
         </div>
-        
+
+      </div>
+
+      <div className="w-[100vw] pt-10 pb-10 bg-faded-color grid place-items-center rounded-b-[100%]">
+        <div className="w-[40%]">
+            <div className="grid place-items-center">
+              <FaHeartPulse color="orange" size={70} />
+              
+          </div>
+          <h1 className="text-[40px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">Our mission</h1>
+          <p className="mt-3 text-center font-para font-medium text-base tracking-[0.2px] text-p-text">To challenge the conventional healthcare systems with the ever-expanding technological advancements in providing efficient, customised, and convenient healthcare services to people in rural areas.</p>
+
+          <h1 className="text-[30px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">How?</h1>
+          
+            <p className="mt-3 text-center font-para font-medium text-base tracking-[0.2px] text-p-text">By tapping the power of technology in radiating access to healthcare services across each household regardless of location income level, or health condition.
+          </p> 
+            <p className="mt-3 text-center font-para font-medium text-base tracking-[0.2px] text-p-text">We seek to join other innovative medical institutions in
+                providing our customers with the safest and most efficient
+                medical assistance. You are the reason we operate.</p>          
+
+          
+        </div>
+
       </div>
 
 
 
-      <div className="mt-10">
-        <h1 className="text-2xl sm:text-5xl font-bold text-text-color  tracking-[0.2px] text-center  mt-10">Our Values</h1>
-        <div className="sm:my-5 mx-auto w-[90%] sm:w-[90%] sm:grid grid-cols-4 gap-20 place-items-center">
-        {valuesData.map(({ icon, title, description, id }) => { 
-                      return <div key={id} className={` h-full`} >
-                          <ValuesCard iconImage={icon} textTitle={title} descript={description}  />
-                      </div>
-                   })}
+      <div className=" w-[90vw] mx-auto mt-10 ">
+
+        <h1 className="text-[40px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">We Value...</h1>
+
+
+        <div className="mt-10 grid grid-cols-3 gap-4"> 
+          <div className=" p-10 bg-[#FFFFFF] middleCard">
+            <div className="grid place-items-center">
+              <IoDiamondOutline color="orange" size={60} />
+              
+            </div>
+            
+            <h1 className="text-[20px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">Ownership</h1>
+            <p className="mt-3 text-center font-para font-medium text-base tracking-[0.2px] text-p-text">We personalise your medical journey and walk with you across all milestones until recovery. We are problem solvers who ensure that your medical journey is nothing short of healing and restoration.</p>
+          </div>
+          <div className=" p-10 bg-[#FFFFFF] middleCard">
+            <div className="grid place-items-center">
+              <GiRomanToga color="orange" size={60}/>
+            </div>
+            
+            <h1 className="text-[20px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">Inclusivity</h1>
+            <p className="mt-3 text-center font-para font-medium text-base tracking-[0.2px] text-p-text">We don't leave anyone behind. Irrespective of your financial, environmental, religious, and political backgrounds, be assured of customised help from our experienced team.</p>
+          </div>
+          <div className=" p-10 bg-[#FFFFFF] middleCard">
+            <div className="grid place-items-center">
+             <MdOutlinePublishedWithChanges color="orange" size={60} />
+              
+            </div>
+            
+            <h1 className="text-[20px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">Flexibility</h1>
+            <p className="mt-3 text-center font-para font-medium text-base tracking-[0.2px] text-p-text">We are relentless in maximising our capacities to meet the needs of our customers. We aim to challenge the standards every time with our unmatched flexibility in providing our services.</p>
+          </div>          
+        </div>
+
       </div>
+     
+
+      <div className="mt-14">
+       
+        <div className=" w-[100%] mx-auto relative overflow-hidden">
+        <h1 className="text-[40px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">Meet The Team</h1>
+        <p className="mt-3 text-center font-para font-medium text-base tracking-[0.2px] text-p-text w-[60%] mx-auto">Our medical staffs are well equipped to meet your medical needs 24/7. With three categories covering over 200 conditions, help is always assured.</p>          
+          <div className="flex  w-[80%] mx-auto mt-5">
+            <div><img src={image1} alt="" /></div>
+            <div><img src={image2} alt="" /></div>
+            <div><img src={image3} alt="" /></div>
+          </div>
+          <div className="w-[100%] h-[10px]  bg-btn-color absolute bottom-0 left-0 right-0 grid place-items-end">
+            <div className="w-[40%] h-full  flex">
+              <div className="w-[50%] h-full bg-main-color"></div>
+              <div className="w-[40%] h-full bg-p-text"></div>
+              <div className="w-[10%] h-full bg-p-text-alt"></div>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <Team />
     </div>
   )
 }

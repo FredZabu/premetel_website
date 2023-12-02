@@ -6,7 +6,7 @@ function ServiceSectionCard(props) {
     <div>
         <div className="w-[90%] mx-auto sm:w-[90%] h-[80vh] flex items-center">
           
-        <div className= {` w-[45%] h-[400px] bg-btn-color ${flag % 2 === 0 ? 'order-3': 'order-1'} `}>
+        <div className= {` w-[45%] h-[400px]  ${flag % 2 === 0 ? 'order-3': 'order-1'} `}>
            <img src={icon} alt="image for a service"  />
         </div>
               
@@ -17,7 +17,7 @@ function ServiceSectionCard(props) {
         </div>  
               
         <div className={` w-[45%] ${flag % 2 === 0 ? 'order-1': 'order-3'} `}>
-                  <h1 className="font-bold text-text-color2 tracking-[0.2px] text-4xl font-title ">{title}</h1>
+                  <h1 className="font-medium text-text-color2 tracking-[0.2px] text-4xl font-title ">{title}</h1>
           <p className="leading-[30px] font-para font-medium text-lg tracking-[0.2px] text-p-text mt-5">{description}</p>
           {/* <button className= {` mt-10   bg-btn-color text-white  font-para font-bold hover:bg-text-color2 hover:text-white  text-[18px] tracking-[0.2px] leading-[22px] py-[14px] px-[18px] rounded-[5px] flex items-center gap-4`}> <span>Learn more</span>  <img src={arrow} alt=""  />  </button>           */}
         </div>          

@@ -32,9 +32,8 @@ function Navbar() {
               <ul className='flex-[1.2] flex flex-col sm:flex-row items-center  space-y-5 sm:space-y-0 justify-center sm:justify-end sm:space-x-12 text-light-gray-1 font-para sm:text-white'>
                             <li className={`sm:mt-0 mt-4 cursor-pointer text-grayishBlue font-normal  text-[16px] tracking-[0.2px] leading-[22px]  transition-all duration-300 ease-in-out ${pathMathRoute('/')? "text-white " : 'border-b-transparent '}`}> <Link to="/">Home</Link> </li>
                   <li className={`sm:mt-0 mt-4 cursor-pointer text-grayishBlue font-[400] text-[16px] tracking-[0.2px]  leading-[22px]  transition-all duration-300 ease-in-out `}> <Link to="/about" >About us</Link> </li> 
-                  <li className={`sm:mt-0 mt-4 cursor-pointer text-grayishBlue font-[400] text-[16px] tracking-[0.2px]  leading-[22px]  transition-all duration-300 ease-in-out `}> <Link to="/services">Diseases</Link> </li>
+                  <li className={`sm:mt-0 mt-4 cursor-pointer text-grayishBlue font-[400] text-[16px] tracking-[0.2px]  leading-[22px]  transition-all duration-300 ease-in-out `}> <Link to="/services">Diseases We Treat</Link> </li>
                  
-                  <li className={`sm:mt-0 mt-4 cursor-pointer text-grayishBlue font-[400] text-[16px] tracking-[0.2px] leading-[22px]   transition-all duration-300 ease-in-out `}> <Link to="/contact">Contact</Link> </li>
               </ul>
 
                     <div className='inline-flex  justify-end space-x-5'>

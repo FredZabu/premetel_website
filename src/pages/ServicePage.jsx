@@ -1,33 +1,55 @@
-import serviceBg from "../assets/serviceBg.jpg";
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-unused-vars */
+import diseaseImage from "../assets/diseaseImage.png";
+import { DiseaseCard, MentalCard, PreventiveCard } from "../components/index.jsx";
 
-import DiseaseTable from "../components/DiseaseTable";
+import { FaDisease } from "react-icons/fa6";
 import { UrgentCare, PreventiveHealth, MentalHealth } from "../data/Data.js";
 function ServicePage() {
   return (
     <div className="w-full  mt-[12vh] overflow-x-hidden">
-      <div className="h-[50vh]  sm:h-[70vh] relative">
-        <div className=" h-full sm:w-[50%] relative">
-          <img src={serviceBg}  alt="" className="h-full" />
+      
+        <div className=" h-[65vh] grid place-items-center w-full bg-[#e5f7e9]">
+          <div className="w-[60%]">
+            <div className="grid place-items-center">
+              <FaDisease color="orange" size={70} />   
+            </div>
+
+            <h1 className="text-[40px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">What We Treat</h1>
+            <p className="mt-3 text-center font-para font-medium text-base tracking-[0.2px] text-p-text">We offer dynamic health services that address the most common health conditions. We believe that being sick is already difficult, and thus, getting treatments shouldn’t be. We group the packages of diseases we address into three categories: urgent care, preventative health, and mental health.</p>
+          </div>
+      </div>
+      <div className="h-[80vh] w-[70%]  relative flex justify-between items-center mx-auto bg-[#ffffff]">
+        <div className="w-[40%] mt-[-20%]">
+          <img src={diseaseImage} className="w-[100%]" alt="" />
         </div>
-        <div className="  absolute top-[50%] z-[5] bg-transparent sm:bg-white  translate-y-[-50%] left-0 right-0 sm:left-[60%] sm:w-[35%] p-2 sm:p-0">
-          <h1 className="text-4xl sm:text-4xl 2xl:text-5xl font-title font-[600] sm:text-text-color sm:leading-[45px] tracking-[0.2px] sm:w-[542px] mt-5 text-center sm:text-start text-white">What We Treat</h1>
-          <p className="w-[100%] sm:w-[95%] mt-2 2xl:text-2xl 2xl:w-[60%] leading-[25px] text-center sm:text-start tracking-[0.2px] text-white sm:text-p-text">We offer dynamic health services that address the most common health conditions. We believe that being sick is already difficult, and thus, getting treatments shouldn’t be. We group the packages of diseases we address into three categories: urgent care, preventative health, and mental health. </p>
+        <div className="w-[2px] h-[50%] bg-text-color2"></div>
+        <div className="w-[40%]">
+          <h1 className="text-[26px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5    text-text-color2">Talk to a doctor anytime, anyday</h1>
+          <p className="mt-3 font-para font-medium text-base tracking-[0.2px] text-p-text">We give you 24-hour access to highly qualified general practitioners and specialists doctors across the nation. With this, you get access to;</p>
+          <ul className="list mt-5 ml-5 font-para font-medium text-base tracking-[0.2px] text-p-text">
+            <li>Doctor's Notes</li>
+            <li>Prescription</li>
+            <li>HD Video and Audio calls</li>
+          </ul>
         </div>
-        <div className="bgkla2 border-white absolute top-0 left-0 right-0 bottom-0 sm:w-[50%]"></div>
       </div>
 
-      <div className="mt-20">
+      <div className="overflow-hidden  w-[100vw] bg-[#f2f2f2] pt-10 pb-10">
+      <div className="overflow-hidden h-[100vh] w-[100%] ">
 
-        <DiseaseTable data = {UrgentCare} titleSec ='URGENT CARE' description = 'Upon being categorised as a critical care case, the patient will directly have customised consultations, tests, and prescriptions on diseases such as follows.' />
+        <DiseaseCard />
       </div>
-      <div className="mt-20">
+      <div className="overflow-hidden h-[90vh] w-[100%] mt-10">
 
-        <DiseaseTable data = {PreventiveHealth} titleSec = 'PREVENTIVE HEALTH' description = 'Our experienced team takes pride in providing progressive preventive healthcare services to our customers. We ensure that your day-to-day health routines align with your fitness/wellness dreams. We offer robust treatment programs that help you handle the following conditions without complications.' />
-      </div>
-      <div className="mt-20">
-
-        <DiseaseTable data = {MentalHealth} titleSec = 'MENTAL HEALTH' description = 'We offer a full spectrum of compassionate mental health services that are highly flexible and accessible. You will be sure to find someone who meets your needs by being exposed to our highly qualified therapists and psychiatrists who immediately cease your mental health issue. Our services come from clinical experts with years of experience in dealing with the following mental conditions;' />
+        <PreventiveCard />
       </div>      
+      <div className="overflow-hidden h-[100vh] w-[100%] mt-10">
+
+        <MentalCard />
+        </div>  
+        </div>
+       
     </div>
   )
 }

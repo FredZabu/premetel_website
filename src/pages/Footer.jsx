@@ -74,7 +74,7 @@ function Footer() {
             </div>
             <div className="w-full flex items-center">
                 <div className=" inline-flex mx-auto flex-col items-center">
-                        <div className="fixed left-4 top-[20%]  mt-4">
+                        <div className="fixed left-4 top-[20%] z-[999] mt-4">
                         <div className="mt-2 p-1 bg-[#0866FF] rounded-md">
                             <BsFacebook color="#FFFFFF" size={24} />
                   </div>
