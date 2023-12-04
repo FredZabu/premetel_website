@@ -51,16 +51,16 @@ const Slider = () => {
       setCurrentSlide(0)
    }, [])
     
-    useEffect(() => {
-      auto();
-      return ()=> clearInterval(slideInterval)
-   },[currentSlide])
+   //  useEffect(() => {
+   //    auto();
+   //    return ()=> clearInterval(slideInterval)
+   // },[currentSlide])
     
-   return <div className="w-[100vw] h-[50vh] bgkla  sm:h-[100vh] sm:w-[100vw]  overflow-hidden relative">
+   return <div className="w-[100vw] h-[100%] bgkla sm:w-[100vw] border grid place-items-center overflow-hidden relative">
       <AnimatePresence initial='false' mode="wait">
          {renderHeader}
       </AnimatePresence>    
-      <div className={`absolute top-[40%] right-10 translate-y-[-50%] flex justify-between items-center flex-col`}>
+      <div className={`absolute top-[40%] right-10 translate-y-[-50%] hidden lg:flex justify-between items-center flex-col`}>
          <div className={` ${sliderBtn === 'first'? 'w-[20px] h-[20px] bg-transparent border-2 border-light-gray-1': 'w-[15px] h-[15px] hover:w-[20px] hover:h-[20px]   border-none bg-light-gray-1 '} cursor-pointer mt-2 rounded-full grid place-items-center`} onClick={()=>handleClick(0)} > <div className={` block w-[8px] h-[8px] bg-light-gray-1 rounded-full `}></div> </div>
            <div className={`  ${sliderBtn === 'second' ? 'w-[20px] h-[20px] bg-transparent border-2 border-light-gray-1' : 'w-[15px] h-[15px] hover:w-[20px] hover:h-[20px] border-none bg-light-gray-1 '} cursor-pointer mt-2 rounded-full grid place-items-center`} onClick={() => {
                handleClick(1)
