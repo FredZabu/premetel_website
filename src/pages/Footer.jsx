@@ -15,8 +15,8 @@ function Footer() {
   }
     return (
         <div className="mt-20 footer-bg-color border-2 border-transparent relative"> 
-            <div className="w-[80%] subscribe grid place-items-center py-4">
-                <div className="w-60% ">
+            <div className="w-[100vw] md:w-[80%]  subscribe grid place-items-center py-4">
+                <div className=" ">
                     <p className="text-center font-bold text-white tracking-[0.2px] text-xl font-title ">Join Our Mailing List Today</p>
                     <div className="flex flex-row mt-4  items-center space-x-2">
                         <input className='w-full px-4 py-2 focus:border-main-color focus:border-[1px] outline-none text-lg text-p-text bg-white  border-gray-300 rounded transition ease-in-out' type="email"  value={email} onChange={onChange} placeholder='Your email' />
@@ -26,7 +26,7 @@ function Footer() {
             </div>
       <div className="mt-[50px] py-10 ">
       <div className="flex flex-col  sm:flex-row justify-between  w-[90%] mx-auto">
-          <div className="  w-[40%]">
+          <div className="  md:w-[40%]">
               <img src={logo} alt="" className="w-[15%]" />
               <p className="mt-4 sm:w-[90%] w-full text-lg  font-title font-medium leading-[30px] tracking-[0.2px] text-light-gray-1 ">Primetel believes in challenging the conventional healthcare systems with the ever-expanding technological advancements.</p>
 

@@ -4,12 +4,12 @@ import { ScenarioCard } from "../components";
 
 function AspirationSection() {
   return (
-    <div className="w-[90vw] mt-10 mx-auto sm:mt-40">
-              <div className="w-[80%] mx-auto mb-10">
-              <h1 className=" text-center text-[50px] text-text-color2 font-title font-medium">
+    <div className="w-[95%] sm:w-[98%] md:w-[98%] lg:w-[100%] xl:w-[90%] mx-auto mt-10 sm:mt-40 bg-transparent">
+              <div className="sm:w-[80%] mx-auto mb-10">
+              <h1 className="text-center text-[35px] sm:text-[40px]  md:text-[45px] lg:text-[50px] text-text-color2 font-title font-medium">
                   Our Aspirations
               </h1>
-              <h1  className="sm:leading-[35px] tracking-[0.2px] text-p-text text-xl mt-5 sm:mt-0 font-para font-medium text-center ">Primetel believes in challenging the conventional healthcare  systems with the ever-expanding technological advancements in providing efficient, customized, and convenient healthcare services to people in rural areas</h1>
+              <h1  className="sm:leading-[35px] tracking-[0.2px] text-p-text text-base md:text-xl mt-5 sm:mt-0 font-para font-medium text-center ">Primetel believes in challenging the conventional healthcare  systems with the ever-expanding technological advancements in providing efficient, customized, and convenient healthcare services to people in rural areas</h1>
         </div>
       
       <div className="flex justify-between sm:mt-16 ">
@@ -30,12 +30,14 @@ function AspirationSection() {
       })}
       </div>
 
-      <div className="flex sm:justify-between flex-col xl:space-x-10 lg:space-x-5 sm:flex-row mt-16  items-center">
-        {aspirationData.map(({ icon, title, description, id }) => { 
-                      return <div key={id} className={`h-full mt-10 sm:mt-0 flex-1`} >
-                          <ScenarioCard iconImage={icon} textTitle={title} descript={description}  />
+      <div className=" grid  sm:place-items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2  mt-10  w-[100%]">
+       
+                  {aspirationData.map(({ icon, title, description, id }) => { 
+                      return <div key={id} className={`h-full mt-10 sm:mt-0 `} >
+                          <ScenarioCard iconImage={icon} textTitle={title} descript={description} id={id} customStyle='text-xl' />
                       </div>
                    })}
+       
       </div>
           
     </div>

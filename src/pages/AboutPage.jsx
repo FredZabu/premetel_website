@@ -10,13 +10,13 @@ function AboutPage() {
   return (
     <div className=" mt-[12vh] w-[100vw] bg-[#fffcf1]">
            
-      <div className="h-[80vh] w-[100vw] bg-[#376198]  ">
+      <div className="border-2 h-[80vh] w-[100vw] bg-[#376198]  ">
 
-        <div className="w-[90%] mx-auto flex justify-between pt-10">
-          <div className="w-[50%]">
+        <div className="w-[90%] border mx-auto  flex flex-col justify-between pt-10">
+          <div className="border w-[100%] md:w-[50%]">
 
             <div>
-            <h1 className="text-[40px]  font-title font-semibold sm:leading-[45px] tracking-[0.2px] mb-5   text-[orange]">Our Story<span className="text-light-gray-1">...</span></h1>
+            <h1 className="md:text-[40px]  font-title font-semibold sm:leading-[45px] tracking-[0.2px] mb-5   text-[orange]">Our Story<span className="text-light-gray-1">...</span></h1>
             <p className="mt-3 font-para font-medium text-base tracking-[0.2px] text-light-gray-1">Access to high-quality healthcare services, particularly in rural areas, has highly been jeopardised and turned into a “privilege.” We are keen on harnessing technological advancements into powerful medical tools that challenge how we define high-quality healthcare services.
 </p>
             

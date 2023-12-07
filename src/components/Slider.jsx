@@ -22,7 +22,7 @@ const Slider = () => {
    const BtnKeys = ['first', 'second', 'third', 'fourth'];
 
 
-    const [currentSlide, setCurrentSlide] = useState(0)
+    const [currentSlide, setCurrentSlide] = useState(2)
     const [renderHeader, setRenderHeader] = useState(slides[currentSlide]);
     const [sliderBtn, setSliderBtn] = useState(BtnKeys[currentSlide]);
 
@@ -56,7 +56,7 @@ const Slider = () => {
    //    return ()=> clearInterval(slideInterval)
    // },[currentSlide])
     
-   return <div className="w-[100vw] h-[100%] bgkla sm:w-[100vw] border grid place-items-center overflow-hidden relative">
+   return <div className="w-[100vw] h-[100%] bgkla sm:w-[100vw]  grid place-items-center md:block overflow-hidden relative">
       <AnimatePresence initial='false' mode="wait">
          {renderHeader}
       </AnimatePresence>    
