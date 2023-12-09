@@ -10,42 +10,42 @@ function AboutPage() {
   return (
     <div className=" mt-[12vh] w-[100vw] bg-[#fffcf1]">
            
-      <div className="border-2 h-[80vh] w-[100vw] bg-[#376198]  ">
+      <div className="md:h-[100vh] xl:h-[80vh] w-[100vw] bg-[#376198]  ">
 
-        <div className="w-[90%] border mx-auto  flex flex-col justify-between pt-10">
-          <div className="border w-[100%] md:w-[50%]">
+        <div className=" md:w-[95%] lg:w-[90%]  mx-auto  flex flex-col md:flex-row justify-between pt-10">
+          <div className=" order-2 md:order1 w-[100% ] px-4 pb-10 md:w-[50%]">
 
             <div>
-            <h1 className="md:text-[40px]  font-title font-semibold sm:leading-[45px] tracking-[0.2px] mb-5   text-[orange]">Our Story<span className="text-light-gray-1">...</span></h1>
+            <h1 className="text-[30px] md:text-[40px]  font-title font-semibold sm:leading-[45px] tracking-[0.2px] mb-5   text-[orange]">Our Story<span className="text-light-gray-1">...</span></h1>
             <p className="mt-3 font-para font-medium text-base tracking-[0.2px] text-light-gray-1">Access to high-quality healthcare services, particularly in rural areas, has highly been jeopardised and turned into a “privilege.” We are keen on harnessing technological advancements into powerful medical tools that challenge how we define high-quality healthcare services.
 </p>
             
-            <p className="mt-5 font-para font-medium text-base tracking-[0.2px] text-light-gray-1"> We provide our customers with the safest and most affordable medical services while offering personalised consultations during and after prescriptions.
+            <p className=" mt-5 font-para font-medium text-base tracking-[0.2px] text-light-gray-1"> We provide our customers with the safest and most affordable medical services while offering personalised consultations during and after prescriptions.
             </p>
-            <p className="mt-5 font-para font-medium text-base tracking-[0.2px] text-light-gray-1">We combine the latest technology with the
+            <p className=" mt-5 font-para font-medium text-base tracking-[0.2px] text-light-gray-1">We combine the latest technology with the
                 knowledge and expertise of our medical staff to make healthcare
                 more affordable, accessible, and inclusive to everyone in the
                 rural areas of Tanzania.</p>
-              <p className="mt-5 font-para font-medium text-base tracking-[0.2px] text-light-gray-1">We strongly believe that being sick is complicated; thus, accessing medical services shouldn’t be.</p>
+              <p className="md:mt-5 font-para font-medium text-base tracking-[0.2px] text-light-gray-1">We strongly believe that being sick is complicated; thus, accessing medical services shouldn’t be.</p>
               </div>
 
             
           </div>
   
-          <div className="inline-grid place-items-center mt-5  overflow-hidden ">
-            <img src={DoctorImage} alt="" className=" rounded-3xl " />
+          <div className="order-1   md:order-2 inline-grid place-items-center md:mt-5  overflow-hidden ">
+            <img src={DoctorImage} alt="" className=" w-[60%] md:w-[70%] lg:w-[90%] xl:w-auto rounded-3xl " />
           </div>          
         </div>
 
       </div>
 
-      <div className="w-[100vw] pt-10 pb-10 bg-faded-color grid place-items-center rounded-b-[100%]">
-        <div className="w-[40%]">
+      <div className="w-[100vw] pt-10 pb-10 bg-faded-color grid place-items-center  md:rounded-b-[100%]">
+        <div className="px-4 md:w-[40%]">
             <div className="grid place-items-center">
               <FaHeartPulse color="orange" size={70} />
               
           </div>
-          <h1 className="text-[40px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">Our mission</h1>
+          <h1 className="text-[30px] md:text-[40px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">Our mission</h1>
           <p className="mt-3 text-center font-para font-medium text-base tracking-[0.2px] text-p-text">To challenge the conventional healthcare systems with the ever-expanding technological advancements in providing efficient, customised, and convenient healthcare services to people in rural areas.</p>
 
           <h1 className="text-[30px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">How?</h1>
@@ -65,10 +65,10 @@ function AboutPage() {
 
       <div className=" w-[90vw] mx-auto mt-10 ">
 
-        <h1 className="text-[40px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">We Value...</h1>
+        <h1 className="text-[30px] md:text-[40px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">We Value...</h1>
 
 
-        <div className="mt-10 grid grid-cols-3 gap-4"> 
+        <div className="mt-10 grid md:grid-cols-3 gap-4"> 
           <div className=" p-10 bg-[#FFFFFF] middleCard">
             <div className="grid place-items-center">
               <IoDiamondOutline color="orange" size={60} />
@@ -103,8 +103,8 @@ function AboutPage() {
       <div className="mt-14">
        
         <div className=" w-[100%] mx-auto relative overflow-hidden">
-        <h1 className="text-[40px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">Meet The Team</h1>
-        <p className="mt-3 text-center font-para font-medium text-base tracking-[0.2px] text-p-text w-[60%] mx-auto">Our medical staffs are well equipped to meet your medical needs 24/7. With three categories covering over 200 conditions, help is always assured.</p>          
+        <h1 className="text-[30px] md:text-[40px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">Meet The Team</h1>
+        <p className="mt-3 text-center font-para font-medium text-base tracking-[0.2px] text-p-text w-[90%] md:w-[60%] mx-auto">Our medical staffs are well equipped to meet your medical needs 24/7. With three categories covering over 200 conditions, help is always assured.</p>          
           <div className="flex  w-[80%] mx-auto mt-5">
             <div><img src={image1} alt="" /></div>
             <div><img src={image2} alt="" /></div>
