@@ -6,7 +6,7 @@ function Header1() {
   return (
     <motion.div animate={{opacity:1}} initial={{opacity:0}} transition={{type:"tween", duration:0.5 }} exit={{x:-10, opacity:0, transition:{duration:1}}}  className=" h-[100%] w-[98%]  mx-auto sm:h-[100%] grid place-items-end">
 
-      <div className="  header_parent w-[100%] h-full sm:h-[90%]  sm:w-[100%]  lg:w-[90%] bg-transparent  relative mx-auto  ">
+      <div className="  header_parent w-[100%] h-full sm:h-[100%]  sm:w-[100%]  lg:w-[90%] bg-transparent  relative mx-auto  ">
         
         
           <div className="header_text   lg:p-0 flex flex-col  items-start  mt-0  sm:mt-0 w-[60%] absolute left-0 bottom-0 sm:bottom-auto sm:top-[50%] sm:translate-y-[-50%] ">
@@ -28,7 +28,7 @@ function Header1() {
             <img
               src={nurse}
               alt="image of a nurse"
-              className=" object-cover"
+              className=" absolute bottom-0"
             />
          
         

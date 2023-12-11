@@ -1,9 +1,12 @@
 import { useState } from 'react';
-import  {Link, useLocation} from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom';
+import { IoClose } from "react-icons/io5";
+import { RiMenuFill } from "react-icons/ri";
 import logo from "../assets/logo.png";
 import menu from "../assets/icon-hamburger.svg";
 import close from "../assets/icon-close.svg";
 import { Btn } from "./index";
+
 
 
 function Navbar() {
@@ -46,8 +49,12 @@ function Navbar() {
                         </div>
           </div>
 
-          <div className=" md:hidden" onClick={()=>{ setClick(!click)}} >
-              <img src={click? close : menu} alt="" />
+          <div className={`${click? 'hidden' : 'block' } md:hidden`} onClick={()=>{ setClick(!click)}} >
+           <RiMenuFill color="#FFFFFF" size={32} />
+          </div>
+
+          <div className={`${click? 'block' : 'hidden' } md:hidden`}   onClick={()=>{ setClick(!click)}}>
+            <IoClose color="#FFFFFF" size={32} />
           </div>
           
             </div>

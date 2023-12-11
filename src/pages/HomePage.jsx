@@ -4,7 +4,7 @@ import { KeyFocusSection, ServiceSection, AspirationSection, HowItWorks, Subscri
 function HomePage() {
   return (
       <div className="bg-[#fffcf1]">
-      <div className="mt-[12vh] h-[38vh] sm:h-[80vh] md:h-[75vh] lg:h-[90vh] relative overflow-hidden bg-[#376198]">
+      <div className="mt-[12vh] h-[38vh] sm:h-[50vh] md:h-[60vh] lg:h-[75vh] xl:h-[85vh] relative overflow-hidden bg-[#376198]">
         <Slider />
       </div>
 			<KeyFocusSection />
