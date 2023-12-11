@@ -36,9 +36,9 @@ function Navbar() {
               
                     
               <ul className='flex-[1.2] flex flex-col md:flex-row items-center  space-y-5 md:space-y-0 justify-center md:justify-end md:space-x-12 text-light-gray-1 font-para md:text-white'>
-                            <li className={`md:mt-0 mt-4 cursor-pointer text-grayishBlue font-normal  text-[16px] tracking-[0.2px] leading-[22px]  transition-all duration-300 ease-in-out ${pathMathRoute('/')? "text-white " : 'border-b-transparent '}`}> <Link to="/">Home</Link> </li>
-                  <li className={`md:mt-0 mt-4 cursor-pointer text-grayishBlue font-[400] text-[16px] tracking-[0.2px]  leading-[22px]  transition-all duration-300 ease-in-out `}> <Link to="/about" >About us</Link> </li> 
-                  <li className={`md:mt-0 mt-4 cursor-pointer text-grayishBlue font-[400] text-[16px] tracking-[0.2px]  leading-[22px]  transition-all duration-300 ease-in-out `}> <Link to="/services">Diseases We Treat</Link> </li>
+                            <li className={`md:mt-0 mt-4 cursor-pointer text-grayishBlue font-normal  text-[16px] tracking-[0.2px] leading-[22px]  transition-all duration-300 ease-in-out ${pathMathRoute('/')? "text-white " : 'border-b-transparent '}`}> <Link to="/" onClick={()=>{setClick(false)}}>Home</Link> </li>
+                  <li className={`md:mt-0 mt-4 cursor-pointer text-grayishBlue font-[400] text-[16px] tracking-[0.2px]  leading-[22px]  transition-all duration-300 ease-in-out `}> <Link to="/about" onClick={()=>{setClick(false)}}>About us</Link> </li> 
+                  <li className={`md:mt-0 mt-4 cursor-pointer text-grayishBlue font-[400] text-[16px] tracking-[0.2px]  leading-[22px]  transition-all duration-300 ease-in-out `}> <Link to="/services" onClick={()=>{setClick(false)}}>Diseases We Treat</Link> </li>
                  
               </ul>
 
@@ -49,7 +49,7 @@ function Navbar() {
                         </div>
           </div>
 
-          <div className={`${click? 'hidden' : 'block' } md:hidden`} onClick={()=>{ setClick(!click)}} >
+          <div className={`${click? 'hidden' : ' grid place-items-end' } md:hidden`} onClick={()=>{ setClick(!click)}} >
            <RiMenuFill color="#FFFFFF" size={32} />
           </div>
 
