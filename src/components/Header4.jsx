@@ -8,7 +8,7 @@ function Header4() {
   return (
       <motion.div animate={{opacity:1}} initial={{opacity:0}} transition={{type:"tween", duration:1 }} exit={{x:-10, opacity:0, transition:{duration:1}}} className="  sm:h-[100%]  h-[90%] grid place-items-center">
 
-      <div  className=" header_parent flex justify-between items-center sm:border md:border-white lg:border-btn-color w-[95%] h-[100%]  md:block sm:h-[80%] md:h-full md:w-[98%]  lg:w-[90%] bg-transparent  relative mx-auto ">
+      <div  className=" header_parent flex justify-between items-center  w-[95%] h-[100%]  md:block sm:h-[80%] md:h-full md:w-[98%]  lg:w-[90%] bg-transparent  relative mx-auto ">
         
         
           <div className="header_text   sm:p-4 flex flex-col  sm:items-start   sm:mt-0 sm:w-[60%] md:w-[60%] lg:w-[60%] md:absolute md:left-0 md:top-[50%] md:translate-y-[-50%] overflow-hidden">
@@ -28,13 +28,13 @@ function Header4() {
            
         
 
-        <motion.div animate={{opacity:1}} initial={{opacity:0}} transition={{type:"tween", duration:1 }} className="header_image w-[40%]  sm:block sm:w-[40%] lg:w-[40%] md:right-0 md:absolute md:top-[5%] md:bottom-0 ">
+        <motion.div animate={{opacity:1}} initial={{opacity:0}} transition={{type:"tween", duration:1 }} className="header_image w-[30%]  sm:block md:w-[50%] lg:w-[50%] md:right-0 md:absolute md:top-[5%] md:bottom-0 ">
          
          
             <img
               src={nurse}
               alt="image of a nurse"
-              className=" h-[90%] md:h-[80%] lg:h-[90%]  mx-auto"
+              className=" h-[50%] md:h-[80%] lg:h-[90%]  mx-auto"
               
             />
          
