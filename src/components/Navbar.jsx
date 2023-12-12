@@ -17,8 +17,6 @@ function Navbar() {
       return true;
     } 
   }
-
-
     return (
       <div className=' h-[12vh] fixed top-0 left-0 right-0 shadow-sm md:shadow-none bg-header-color z-[999]'>
             
@@ -39,7 +37,7 @@ function Navbar() {
                  
               </ul>
 
-                    <div className='inline-flex  md:justify-end space-x-5'>
+                    <div className='inline-flex   flex-col md:flex-row md:justify-end md:space-x-5'>
                         <Btn styles="bg-transparent border-[2px] text-white py-[8px] px-[25px]" texts="Login" />
                         <Btn styles="bg-btn-color text-white py-[8px] px-[25px]" texts="Register" />
                         </div>

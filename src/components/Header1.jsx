@@ -19,7 +19,7 @@ function Header1() {
             </motion.div>
 
           </div>
-           
+            
         
 
         <motion.div animate={{opacity:1}} initial={{opacity:0}} transition={{type:"tween", duration:1 }} className="header_image  sm:block w-[50%] sm:w-[45%] right-0 absolute sm:top-0 bottom-0 ">
