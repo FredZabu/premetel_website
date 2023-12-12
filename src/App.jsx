@@ -1,5 +1,6 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 import { Suspense, lazy, useEffect, useState } from 'react';
+import ScrollToTop from './NavigationControl/ScrollToTop.js';
 import { Loader, Navbar } from "./components/index.jsx";
 import { Footer} from "./pages/index";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -17,7 +18,8 @@ function App() {
   return loading ? (
     <Loader />
   ) : (
-		  <Router>
+      <Router>
+        <ScrollToTop />
 			  <Navbar />
       <Routes>
     
