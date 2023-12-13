@@ -12,3 +12,4 @@ export { default as DiseaseCard } from "./DiseaseCard";
 export { default as PreventiveCard } from "./PreventiveCard";
 export { default as MentalCard } from "./MentalCard";
 export { default as KeyFocusCard } from "./KeyFocusCard";
+export { default as TestimonialCard } from "./TestimonialCard";

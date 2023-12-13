@@ -41,7 +41,7 @@ function App() {
             }
           />
                     <Route
-            path="/services"
+            path="/diseasesWeTreat"
             element={
               <Suspense fallback={<Loader />}>
                 <ServicePage />

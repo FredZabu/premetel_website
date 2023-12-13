@@ -1,27 +1,70 @@
+/* eslint-disable no-unused-vars */
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { AiFillYoutube } from "react-icons/ai";
 import { BsTwitter, BsTelephoneFill, BsFacebook } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa6";
-
+import { RxCross1 } from "react-icons/rx";
+import { TiTick } from "react-icons/ti";
 import { MdLocationPin } from "react-icons/md";
 import logo from "../assets/logo2.png";
-import { useState } from "react";
+  
 
 function Footer() {
 
+  const form = useRef();
 
-    const [email, setEmail] = useState()
-     function onChange(e) {
-    setEmail(e.target.value)
-  }
+  const [hide, setHide] = useState(true);
+  const [icon, setIcon] = useState(true)
+
+  const intervalTime = 3000;
+  let showInterval;
+  const changeVisibility = () => {
+    setHide(true);
+    setIcon(true);
+       
+   }
+
+   function auto() {
+      showInterval = setInterval(changeVisibility, intervalTime);
+   }
+    
+     const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_hphy2ke', 'template_zr7o3sl', form.current, 'qMokT_IKV3wgMdBcr')
+      .then((result) => {
+        
+        setHide(false)
+        setIcon(true);
+        e.target.reset();
+        auto()
+      }, (error) => {
+         
+        setHide(false)
+        setIcon(false);
+        auto()
+      });
+   e.target.reset();
+  };
     return (
         <div className="mt-20 footer-bg-color border-2 border-transparent relative"> 
             <div className="w-[100vw] md:w-[80%]  subscribe grid place-items-center py-4">
                 <div className=" ">
                     <p className="text-center font-bold text-white tracking-[0.2px] text-xl font-title ">Join Our Mailing List Today</p>
-                    <div className="flex flex-row mt-4  items-center space-x-2">
-                        <input className='w-full px-4 py-2 focus:border-main-color focus:border-[1px] outline-none text-lg text-p-text bg-white  border-gray-300 rounded transition ease-in-out' type="email"  value={email} onChange={onChange} placeholder='Your email' />
-                        <button className= {` bg-btn-color text-white  font-para font-bold hover:bg-text-color2 hover:text-white  text-[18px] tracking-[0.2px] leading-[22px] py-[10px] px-[18px] rounded-[5px] flex items-center gap-4`}> Subscribe </button> 
-                    </div>
+                    <form ref={form} onSubmit={sendEmail} className="flex flex-row mt-4  items-center space-x-2">
+                        <input className='w-full px-4 py-2 focus:border-main-color focus:border-[1px] outline-none text-lg text-p-text bg-white  border-gray-300 rounded transition ease-in-out' type="email" name="user_email" placeholder='Your email' required />
+                        <div className='inline-block relative'>
+                            <button className={` bg-btn-color text-white  font-para font-medium sss  text-[18px] tracking-[0.2px] leading-[22px] py-[10px] px-[18px] rounded-[5px] flex items-center gap-4`} type="submit"> Subscribe </button>
+                  <div className={`p-1 ${hide? 'hidden': 'inline-block'} ${icon? 'bg-[#12af0a]' : 'bg-[red]'} bg-[#12af0a] rounded-full absolute bottom-[100%] translate-y-[50%] left-[100%] translate-x-[-50%]`} >
+               
+                
+
+                {icon? <TiTick color="#FFFFFF" size={24} /> : <RxCross1 color="#FFFFFF" size={24} />}
+                </div>                          
+                        </div>
+                    </form>
+             
                 </div>
             </div>
       <div className="mt-[50px] py-10 ">
@@ -84,9 +127,7 @@ function Footer() {
                         <div className="mt-2 p-1 bg-[#12af0a] rounded-md" >
                             <FaWhatsapp color="#FFFFFF" size={24} />
                         </div>
-                         <div className="mt-2 p-1 bg-[#FF0000] rounded-md" >
-                            <AiFillYoutube color="#FFFFFF" size={24} />
-                  </div>
+                       
                   
                 </div>
               

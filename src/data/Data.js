@@ -1,3 +1,8 @@
+import profile1 from "../assets/Profile/profile1.png";
+import profile2 from "../assets/Profile/profile2.png";
+import profile3 from "../assets/Profile/profile3.png";
+import profile5 from "../assets/Profile/profile4.png";
+import profile4 from "../assets/Profile/profile5.png";
 import nurse3 from "../assets/nurse5.png";
 import nurse4 from "../assets/nurse4.png";
 import nurse2 from "../assets/nurse3.png";
@@ -122,7 +127,7 @@ export const appreciationData = [
   {
     icon: pharmaciesNo,
     number: '50',
-    title: 'Pharmacies on our platform',
+    title: 'Pharmacies & Laboratories',
     customStyle:'bg-[#FF7E07]',
     id:'appreciation2'
   },
@@ -211,6 +216,33 @@ export const teamData=[
     }
   ];
 
+export const TestimonialData = [
+  {
+    profile: profile1,
+    name: "Kahwa Zabulon",
+    comment: "When I heard about Primetel, I was not so certain I could get solutions to my special medical needs, however when I started using the app, I discovered that there were a lot of specialists I could gain access to and this has saved me the stress of hopping from hospitals to hospitals in search of specialists."
+  },
+  {
+    profile: profile2,
+    name: "Asiimwe Fred",
+    comment: "I had a terrible flu at midnight and there was no way I could get to the hospital. I tried to google diagnosis and remedies but what I saw was quite disturbing. I decided to check through Primetel and I got a doctor who helped me with solutions that night."
+  },
+  {
+    profile: profile3,
+    name: "Upendo Justine",
+    comment: "What I really enjoy about Primetel is the fact that it is quite affordable. I was able to consult a doctor for a really affordable fee and it seems too good to be true."
+  },
+  {
+    profile: profile4,
+    name: "Abasi John",
+    comment: "Awesome service provided by Primetel. Due to my work schedule, I am able to conveniently access doctors anytime and get answers to my medical enquiries. Definitely recommending it to friends and family."
+  },
+  {
+    profile: profile5,
+    name: "Zzawadi Rose",
+    comment: "The app is really easy to use. This is a welcome innovation to the health sector. It is highly commendable!"
+  }  
+]
 
 export const UrgentCare = [
   {
