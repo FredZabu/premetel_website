@@ -2,7 +2,8 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { AiFillYoutube } from "react-icons/ai";
-import { BsTwitter, BsTelephoneFill, BsFacebook } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
+import {  BsTelephoneFill, BsFacebook } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa6";
 import { RxCross1 } from "react-icons/rx";
 import { TiTick } from "react-icons/ti";
@@ -122,10 +123,11 @@ function Footer() {
                             <BsFacebook color="#FFFFFF" size={24} />
                   </div>
                         <div className="mt-2 p-1 bg-[#1d9bf0] rounded-md" >
-                            <BsTwitter color="#FFFFFF" size={24} />
+                            
+                            <FaXTwitter color="#FFFFFF" size={24}/>
                         </div>
                         <div className="mt-2 p-1 bg-[#12af0a] rounded-md" >
-                            <FaWhatsapp color="#FFFFFF" size={24} />
+                            {/* <FaWhatsapp color="#FFFFFF" size={24} /> */}
                         </div>
                        
                   
