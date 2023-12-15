@@ -1,14 +1,13 @@
 /* eslint-disable no-unused-vars */
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { AiFillYoutube } from "react-icons/ai";
-import { FaXTwitter } from "react-icons/fa6";
-import {  BsTelephoneFill, BsFacebook } from "react-icons/bs";
+import { BsTelephoneFill, BsFacebook } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa6";
 import { RxCross1 } from "react-icons/rx";
 import { TiTick } from "react-icons/ti";
 import { MdLocationPin } from "react-icons/md";
 import logo from "../assets/logo2.png";
+import twitter from "../assets/twitter.png";
   
 
 function Footer() {
@@ -122,12 +121,12 @@ function Footer() {
                         <div className="mt-2 p-1 bg-[#0866FF] rounded-md">
                             <BsFacebook color="#FFFFFF" size={24} />
                   </div>
-                        <div className="mt-2 p-1 bg-[#1d9bf0] rounded-md" >
+                        <div className="mt-2 w-[34px]  bg-[#000000] rounded-md" >
                             
-                            <FaXTwitter color="#FFFFFF" size={24}/>
+                            <img src={twitter} alt="twitter logo"  />
                         </div>
                         <div className="mt-2 p-1 bg-[#12af0a] rounded-md" >
-                            {/* <FaWhatsapp color="#FFFFFF" size={24} /> */}
+                            <FaWhatsapp color="#FFFFFF" size={24} />
                         </div>
                        
                   
