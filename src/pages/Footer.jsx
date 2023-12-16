@@ -121,11 +121,14 @@ function Footer() {
                         <div className="mt-2 p-1 bg-[#0866FF] rounded-md">
                             <BsFacebook color="#FFFFFF" size={24} />
                   </div>
-                        <div className="mt-2 w-[34px]  bg-[#000000] rounded-md" >
+                       
                             
-                            <img src={twitter} alt="twitter logo"  />
-                        </div>
-                        <div className="mt-2 p-1 bg-[#12af0a] rounded-md" >
+                            
+                            <a href="http://wa.me/256781936669" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 w-[34px]  bg-[#000000] rounded-md"
+                            ><img src={twitter} alt="twitter logo" />
+                            </a>
+                        
+                        <div className="mt-1 p-1 bg-[#12af0a] rounded-md" >
                             <FaWhatsapp color="#FFFFFF" size={24} />
                         </div>
                        

@@ -43,7 +43,7 @@ function ContactForm() {
         setIcon(false);
         auto()
       });
-   e.target.reset();
+   
   };
 
   return (
