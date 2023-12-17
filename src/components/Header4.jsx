@@ -67,13 +67,13 @@ function Header4() {
             
         
 
-        <motion.div animate={{opacity:1}} initial={{opacity:0}} transition={{type:"tween", duration:1 }} className="header_image  sm:block w-[50%] sm:w-[45%] right-0 absolute sm:top-0 bottom-0 ">
+        <motion.div animate={{opacity:1}} initial={{opacity:0}} transition={{type:"tween", duration:1 }} className="header_image  sm:block w-[45%] h-[95%] border-2 sm:w-[40%] right-0 absolute sm:top-0 bottom-0 ">
          
          
             <img
               src={nurse}
               alt="image of a nurse"
-              className=" absolute bottom-0"
+              className=" absolute bottom-0 right-0 w-auto border h-[100%]"
             />
          
         
