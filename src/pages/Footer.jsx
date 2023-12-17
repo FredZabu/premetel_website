@@ -67,15 +67,20 @@ function Footer() {
              
                 </div>
             </div>
-      <div className="mt-[50px] py-10 ">
-      <div className="flex flex-col  sm:flex-row justify-between  w-[90%] mx-auto">
-          <div className="  md:w-[40%]">
-              <img src={logo} alt="" className="w-[15%]" />
+            <div className="mt-[50px] py-10 ">
+                
+      
+                <div className="flex flex-col  lg:flex-row justify-between  w-[90%] mx-auto">
+            
+                    <div className=" sm:w-[95%] md:w-[90%] lg:mb-0 lg:w-[40%]">
+              <img src={logo} alt="" className=" w-[10%] lg:w-[15%]" />
               <p className="mt-4 sm:w-[90%] w-full text-lg  font-title font-medium leading-[30px] tracking-[0.2px] text-light-gray-1 ">Primetel believes in challenging the conventional healthcare systems with the ever-expanding technological advancements.</p>
 
                     </div>
-                    
-          <div className=" sm:mt-0 mt-10" >
+            
+                    <div className="flex flex-col mt-5  sm:flex-row justify-between">
+                    <div className=" sm:mt-0 " >
+
               <h1 className="text-xl mb-4 font-title font-bold text-light-gray-1 sm:leading-[30px] tracking-[0.2px] ">Contact us</h1>
               <div className="flex items-center">
                         <MdLocationPin color="#1d9bf0" size={40} />
@@ -91,9 +96,9 @@ function Footer() {
                       <p className="font-title font-medium leading-[30px] tracking-[0.2px] ">+250 783 784 394</p>
                   </div>               
               </div>     
-          </div>
+                    </div>
 
-          <div className=" mt-10 sm:mt-0">
+                    <div className=" mt-5 sm:mt-0">
               <h1 className="text-xl mb-4 font-title font-bold text-light-gray-1 sm:leading-[30px] tracking-[0.2px] ">Useful Links</h1>
               <ul className="text-light-gray-1">
                   <li className="mt-4 font-title font-medium leading-[30px] tracking-[0.2px] ">About us</li>
@@ -103,7 +108,7 @@ function Footer() {
               </ul>
                     </div>
                     
-          <div className=" mt-10 sm:mt-0">
+                    <div className=" mt-5 sm:mt-0">
               <h1 className="text-xl mb-4 font-title font-bold  sm:leading-[30px] tracking-[0.2px] text-light-gray-1">Our services</h1>
               <ul className="text-light-gray-1">
                   <li className="mt-4 font-title font-medium leading-[30px] tracking-[0.2px] ">Telemedicine</li>
@@ -111,32 +116,29 @@ function Footer() {
                   <li className="mt-4 font-title font-medium leading-[30px] tracking-[0.2px] ">Pharmacy</li>
                   <li className="mt-4 font-title font-medium leading-[30px] tracking-[0.2px] ">Medicine delivery</li>
               </ul>
-          </div>
-    </div>
+                    </div>
+                </div>
+                </div>
            
             </div>
             <div className="w-full flex items-center">
                 <div className=" inline-flex mx-auto flex-col items-center">
-                        <div className="fixed left-4 top-[20%] z-[999] mt-4  hidden lg:block">
-                        <div className="mt-2 p-1 bg-[#0866FF] rounded-md">
+                    <div className="f fixed left-4 top-[20%] z-[999] mt-4  hidden lg:flex lg:flex-col">
+                        <a href="http://wa.me/256781936669" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 p-1 bg-[#0866FF] rounded-md">
                             <BsFacebook color="#FFFFFF" size={24} />
-                  </div>
-                       
+                        </a>
                             
-                            
-                            <a href="http://wa.me/256781936669" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 w-[34px]  bg-[#000000] rounded-md"
-                            ><img src={twitter} alt="twitter logo" />
-                            </a>
-                        
-                        <div className="mt-1 p-1 bg-[#12af0a] rounded-md" >
-                            <FaWhatsapp color="#FFFFFF" size={24} />
-                        </div>
-                       
-                  
-                </div>
+                        <a href="http://wa.me/256781936669" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 w-[34px]  bg-[#000000] rounded-md">
+                            <img src={twitter} alt="twitter logo" />
+                        </a>
+
+                        <a href="http://wa.me/256781936669" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 w-[34px] p-1 bg-[#12af0a] rounded-md">
+                            <FaWhatsapp color="#FFFFFF" size={24} />                                    
+                        </a>                        
+                    </div>
               
 
-                 <p className=" font-title font-medium leading-[30px] tracking-[0.2px] text-white"> <span>&#169;</span>2023 Primetel | All rights reserved</p>
+                 <p className=" font-title font-medium leading-[30px] tracking-[0.2px] text-white"> <span>&#169;</span> {new Date().getFullYear()}  Primetel | All rights reserved</p>
                 </div>
                           
             </div>

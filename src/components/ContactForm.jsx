@@ -8,6 +8,7 @@ import { FiPhoneCall } from "react-icons/fi";
 import { MdSubject } from "react-icons/md";
 import { BiSend } from "react-icons/bi";
 import { RxCross1 } from "react-icons/rx";
+import { ButtonLoader } from "./index.jsx";
 
 function ContactForm() {
  
@@ -15,7 +16,7 @@ function ContactForm() {
   const [hide, setHide] = useState(true);
   const [icon, setIcon] = useState(true)
 
-  const intervalTime = 3000;
+  const intervalTime = 5000;
   let showInterval;
   const changeVisibility = () => {
     setHide(true);
@@ -94,16 +95,13 @@ function ContactForm() {
                           <button className=' bg-btn-color text-white px-5 md:px-7 py-2 md:py-2 text-center md:text-lg tracking-wide font-para uppercase rounded shadow-md relative inline-grid place-items-center' type="submit">
               <div className='flex space-x-4 items-center'>
                  <p>Submit</p>
-              <BiSend color="#ffffff" size={24} />
+                 
+                  {
+                    hide? <BiSend color="#ffffff" size={24} />: <ButtonLoader />
+                  }
               </div>
               
             </button>
-                <div className={`p-1 ${hide? 'hidden': 'inline-block'} ${icon? 'bg-[#12af0a]' : 'bg-[red]'} bg-[#12af0a] rounded-full absolute bottom-[100%] translate-y-[50%] left-[100%] translate-x-[-50%]`} >
-               
-                
-
-                {icon? <TiTick color="#FFFFFF" size={24} /> : <RxCross1 color="#FFFFFF" size={24} />}
-                </div>
             </div>
           </div>
        

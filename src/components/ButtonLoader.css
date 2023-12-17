@@ -1,0 +1,30 @@
+.Button_loader{
+  border: 4px solid rgba(255, 255, 255, 0.6);
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+.Button_loader {
+  border: 4px solid rgba(255, 255, 255, 0.6);
+  border-left-color: transparent;
+  width: 25px;
+  height: 25px;
+}
+
+.Button_loader {
+  border: 4px solid  rgba(255, 255, 255, 0.6);
+  border-left-color: transparent;
+  width: 25px;
+  height: 25px;
+  animation: spin89345 1s linear infinite;
+}
+
+@keyframes spin89345 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
