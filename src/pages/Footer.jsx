@@ -78,7 +78,7 @@ function Footer() {
 
                     </div>
             
-                    <div className="flex flex-col mt-5  sm:flex-row justify-between">
+                    <div className="flex flex-col mt-5  lg:w-[60%] sm:flex-row justify-between">
                     <div className=" sm:mt-0 " >
 
               <h1 className="text-xl mb-4 font-title font-bold text-light-gray-1 sm:leading-[30px] tracking-[0.2px] ">Contact us</h1>
