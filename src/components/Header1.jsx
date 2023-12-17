@@ -8,7 +8,7 @@ function Header1() {
 
       <div className="  header_parent w-[100%] h-full sm:h-[100%]  sm:w-[100%]  lg:w-[90%] bg-transparent  relative mx-auto  ">
         
-        
+      
           <div className="header_text   lg:p-0 flex flex-col  items-start  mt-0  sm:mt-0 w-[60%] absolute left-0 bottom-0 sm:bottom-auto sm:top-[50%] sm:translate-y-[-50%] ">
             <motion.h1 animate={{x:0,opacity:1}} initial={{x:50, opacity:0}} transition={{type:"tween", duration:1 ,delay:1}} className="  text-2xl  sm:text-[35px] md:text-[45px] md:leading-[70px] lg:text-5xl xl:text-6xl    font-title font-medium text-white  leading-[35px] sm:leading-[55px] lg:leading-[80px] xl:leading-[90px] tracking-[0.2px] text-start  mt-10 sm:text-start  ">
             Pharmacy Services <br />From Home
