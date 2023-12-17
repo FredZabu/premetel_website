@@ -51,10 +51,10 @@ const Slider = () => {
       setCurrentSlide(0)
    }, [])
     
-   //  useEffect(() => {
-   //    auto();
-   //    return ()=> clearInterval(slideInterval)
-   // },[currentSlide])
+    useEffect(() => {
+      auto();
+      return ()=> clearInterval(slideInterval)
+   },[currentSlide])
     
    return <div className="w-[100vw] h-[100%] bgkla sm:w-[100vw]  grid place-items-center md:block overflow-hidden relative">
       <AnimatePresence initial='false' mode="wait">
