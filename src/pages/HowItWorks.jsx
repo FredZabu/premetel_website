@@ -13,12 +13,8 @@ function HowItWorks() {
                   <p className="sm:w-[450px] mt-5 text-base md:text-lg font-medium font-para text-p-text">We provide compassionate healthcare services to all our customers. All you have to do is create an account.</p>
 
                   <div className="flex flex-col">
-        {howData.map(({ icon, title, description, id }) => {
+        {howData.map(({ title, description, id }) => {
           return <div key={id} className="flex items-center mt-5">
-            {/* <div className="hidden md:block w-[72px] relative">
-              
-              <img src={icon} alt="" className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] " />
-          </div> */}
           
           <div className="ml-1">
             <h1 className="text-xl md:text-2xl  font-title font-medium text-text-color2  tracking-[0.2px] mt-5 text-start ">{title}</h1>

@@ -4,7 +4,7 @@ import { TestimonialData} from "../data/Data.js"
 function SubscribeSection() {
   return (
     <div className=" w-[100%] mt-10 ">
-      <h1 className="text-[26px] md:text-[30px]  md:text-[40px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">
+      <h1 className="text-[26px] md:text-[30px]  lg:text-[40px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">
                   Hear from our Patients
         </h1>
         <h1 className="text-center text-p-text text-[18px]  font-para font-medium">Testimonials & Stories
