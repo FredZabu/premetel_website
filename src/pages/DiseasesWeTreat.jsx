@@ -5,7 +5,7 @@ import { DiseaseCard, MentalCard, PreventiveCard } from "../components/index.jsx
 
 import { FaDisease } from "react-icons/fa6";
 import { UrgentCare, PreventiveHealth, MentalHealth } from "../data/Data.js";
-function ServicePage() {
+function DiseasesWeTreat() {
   return (
     <div className="w-full  mt-[12vh] overflow-x-hidden">
       
@@ -20,7 +20,7 @@ function ServicePage() {
           </div>
       </div>
       <div className="md:h-[80vh] w-[90%] md:w-[70%]  relative flex flex-col md:flex-row justify-between md:items-center mx-auto bg-[#ffffff]">
-        <div className="md:w-[40%] md:mt-[-20%]">
+        <div className="w-[60%] mx-auto md:mx-0 md:w-[40%] md:mt-[-5%]">
           <img src={diseaseImage} className="md:w-[100%] " alt="" />
         </div>
         <div className="hidden md:block w-[2px] h-[50%] bg-text-color2"></div>
@@ -36,15 +36,15 @@ function ServicePage() {
       </div>
 
       <div className="overflow-hidden  w-[100vw] bg-[#f2f2f2] pt-10 pb-10">
-      <div className="overflow-hidden md:h-[100vh] w-[100%] ">
+      <div id="urgent" className="overflow-hidden md:h-[100vh] w-[100%] ">
 
         <DiseaseCard />
       </div>
-      <div className="overflow-hidden md:h-[90vh] w-[100%] mt-10">
+      <div id="preventive" className="overflow-hidden md:h-[90vh] w-[100%] mt-10">
 
         <PreventiveCard />
       </div>      
-      <div className="overflow-hidden md:h-[100vh] w-[100%] mt-10">
+      <div id="mental" className="overflow-hidden md:h-[100vh] w-[100%] mt-10">
 
         <MentalCard />
         </div>  
@@ -54,4 +54,4 @@ function ServicePage() {
   )
 }
 
-export default ServicePage
+export default DiseasesWeTreat

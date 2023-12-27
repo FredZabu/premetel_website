@@ -1,3 +1,4 @@
+
 import profile1 from "../assets/Profile/profile1.png";
 import profile2 from "../assets/Profile/profile2.png";
 import profile3 from "../assets/Profile/profile3.png";
@@ -70,7 +71,7 @@ export const keyFocusData = [
         title: 'Urgent Care',
         description: "Flu, colds, skin conditions, women's and men's health, allergies headaches",
         id: 'keyFocus1',
-        flag:'keyFocus'
+        flag:'urgent'
     
     },
      {
@@ -78,14 +79,14 @@ export const keyFocusData = [
         title: 'Preventative Health',
         description: "  Wellness visits, family medicine, women's and men's wellness, nutrition, medication management",
          id: 'keyFocus2',
-        flag:'keyFocus'
+        flag:'preventive'
     },
       {
         icon: icon3,
         title: 'Mental Health',
         description: " Anxiety, depression, relationships, trauma and loss, screening, postpartum",
           id: 'keyFocus3',
-        flag:'keyFocus'
+        flag:'mental'
     }
 ]
 

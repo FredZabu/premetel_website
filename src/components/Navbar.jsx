@@ -1,4 +1,5 @@
-import { useState } from 'react';
+/* eslint-disable react/prop-types */
+import { useState} from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { IoClose } from "react-icons/io5";
 import { RiMenuFill } from "react-icons/ri";
@@ -7,11 +8,13 @@ import { Btn } from "./index";
 
 
 
-function Navbar() {
-    const [click, setClick] = useState(false)
-    const location = useLocation();
+function Navbar(props) {
+  const { bookAppointment, scrollToSection } = props;
+  const [click, setClick] = useState(false)
+  const location = useLocation();
 
-      function pathMathRoute(route) {
+
+    function pathMathRoute(route) {
   
     if (route === location.pathname) {
       return true;
@@ -37,9 +40,9 @@ function Navbar() {
                  
               </ul>
 
-                    <div className='inline-flex   flex-col md:flex-row md:justify-end md:space-x-5'>
-                        {/* <Btn styles="bg-transparent border-[2px] text-white py-[8px] px-[25px]" texts="Login" /> */}
-                        <Btn styles="bg-btn-color text-white py-[14px] px-[20px]" texts="Book Appointment" />
+                    <div onClick={()=>scrollToSection(bookAppointment)} className='inline-flex flex-col md:flex-row md:justify-end md:space-x-5'>
+                      
+                        <Btn  styles="bg-btn-color text-white py-[14px] px-[20px]" texts="Book Appointment"  />
                         </div>
                         </div>
           </div>

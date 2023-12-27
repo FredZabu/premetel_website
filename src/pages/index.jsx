@@ -6,5 +6,4 @@ export { default as AboutPage } from "./AboutPage";
 export { default as HowItWorks } from "./HowItWorks";
 export { default as SubscribeSection } from "./SubscribeSection";
 export { default as Footer } from "./Footer";
-export { default as ContactPage } from "./ContactPage";
-export { default as ServicePage } from "./ServicePage";
+export { default as DiseasesWeTreat } from "./DiseasesWeTreat";

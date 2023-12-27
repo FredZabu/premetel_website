@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/no-unescaped-entities */
 
@@ -13,12 +15,11 @@ import { AnimatePresence } from "framer-motion";
 
 
 
-const Slider = () => {
+const Slider = (props) => {  
 
-   
-  
+   const { bookAppointment, scrollToSection } = props;
 
-   const slides = [<Header4 key='Header1' />, <Header3 key='Header2' />, <Header1 key='Header3' />,<Header2 key='Header4' />, ]
+   const slides = [<Header4 key='Header1' bookAppointment={bookAppointment} scrollToSection={scrollToSection} />, <Header3 key='Header2' bookAppointment={bookAppointment} scrollToSection={scrollToSection} />, <Header1 key='Header3' bookAppointment={bookAppointment} scrollToSection={scrollToSection} />,<Header2 key='Header4' bookAppointment={bookAppointment} scrollToSection={scrollToSection} />, ]
    const BtnKeys = ['first', 'second', 'third', 'fourth'];
 
 

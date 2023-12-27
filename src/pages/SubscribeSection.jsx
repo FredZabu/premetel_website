@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
 import { ContactForm, TestimonialCard } from "../components/index";
 import { TestimonialData} from "../data/Data.js"
 
-function SubscribeSection() {
+function SubscribeSection(props) {
+  const { bookAppointment } = props;
   return (
     <div className=" w-[100%] mt-10 ">
       <h1 className="text-[26px] md:text-[30px]  lg:text-[40px]  font-title font-normal sm:leading-[45px] tracking-[0.2px]  mt-5 text-center   text-text-color2">
@@ -22,7 +24,7 @@ function SubscribeSection() {
           </div>
       </div>
       
-      <div className="w-[100%] bg-[#e5f7e9] sm:h-[80vh] grid place-items-center mx-auto mb-10">
+      <div ref={bookAppointment}  className="w-[100%] bg-[#e5f7e9] sm:h-[80vh] grid place-items-center mx-auto mb-10">
         
 
         <div className="w-[100%] md:[90%] lg:w-[80%]">

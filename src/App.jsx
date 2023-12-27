@@ -1,15 +1,23 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
-import { Suspense, lazy, useEffect, useState } from 'react';
+import { Suspense, lazy, useEffect, useState, useRef } from 'react';
 import ScrollToTop from './NavigationControl/ScrollToTop.js';
 import { Loader, Navbar } from "./components/index.jsx";
 import { Footer} from "./pages/index";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 const AboutPage = lazy(() => import('./pages/AboutPage.jsx'));
-const ContactPage = lazy(() => import('./pages/ContactPage.jsx'));
 const HomePage = lazy(() => import('./pages/HomePage.jsx'));
-const ServicePage = lazy(() => import('./pages/ServicePage.jsx'));
+const DiseasesWeTreat = lazy(() => import('./pages/DiseasesWeTreat.jsx'));
 function App() {
 	const [loading, setLoading] = useState(true);
+  const bookAppointment = useRef(null);
+  // const service = useRef(null);
+
+  const scrollToSection = (sectionRef) => {
+    window.scrollTo({
+      top: sectionRef.current.offsetTop,
+      behavior: "smooth"
+    })
+  }
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 1000);
@@ -20,7 +28,7 @@ function App() {
   ) : (
       <Router>
         <ScrollToTop />
-			  <Navbar />
+			  <Navbar bookAppointment={bookAppointment} scrollToSection={scrollToSection} />
       <Routes>
     
         
@@ -28,7 +36,7 @@ function App() {
             path="/"
             element={
               <Suspense fallback={<Loader />}>
-                <HomePage />
+                <HomePage bookAppointment={bookAppointment} scrollToSection={scrollToSection} />
               </Suspense>
             }
           />
@@ -44,18 +52,11 @@ function App() {
             path="/diseasesWeTreat"
             element={
               <Suspense fallback={<Loader />}>
-                <ServicePage />
+                <DiseasesWeTreat />
               </Suspense>
             }
           />
-          <Route
-            path="/contact"
-            element={
-              <Suspense fallback={<Loader />}>
-                <ContactPage />
-              </Suspense>
-            }
-          />
+         
           
 			  </Routes>
 			  <Footer />

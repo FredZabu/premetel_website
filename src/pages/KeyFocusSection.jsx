@@ -9,10 +9,10 @@ function KeyFocusSection() {
               </div>
       <div className=" grid  sm:place-items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2    w-[100%]">
        
-           {keyFocusData.map(({ icon, title, description, id, flag },index) => { 
+           {keyFocusData.map(({ icon, title, description, id, flag }) => { 
         
                       return <div key={id} className={`h-full mt-10 sm:mt-0 flex-1`} >
-                          <KeyFocusCard iconImage={icon} textTitle={title} descript={description} flags={flag} id={id} customStyle='text-xl' />
+                          <KeyFocusCard iconImage={icon} textTitle={title} descript={description} flags={flag} id={id}  customStyle='text-xl' />
                       </div>
                 
                       
