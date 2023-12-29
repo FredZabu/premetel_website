@@ -128,7 +128,7 @@ function Footer() {
                             <BsFacebook color="#FFFFFF" size={24} />
                         </a>
                             
-                        <a href="" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 w-[34px]  bg-[#000000] rounded-md">
+                        <a href="http://wa.me/250783784394" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 w-[34px]  bg-[#000000] rounded-md">
                             <img src={twitter} alt="twitter logo" />
                         </a>
 
