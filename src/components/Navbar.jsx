@@ -40,10 +40,10 @@ function Navbar(props) {
                  
               </ul>
 
-                    <div onClick={()=>scrollToSection(bookAppointment)} className='inline-flex flex-col md:flex-row md:justify-end md:space-x-5'>
+                    <Link to="/" onClick={()=>scrollToSection(bookAppointment)} className='inline-flex flex-col md:flex-row md:justify-end md:space-x-5'>
                       
                         <Btn  styles="bg-btn-color text-white py-[14px] px-[20px]" texts="Book Appointment"  />
-                        </div>
+                        </Link>
                         </div>
           </div>
 
