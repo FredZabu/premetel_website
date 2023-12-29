@@ -124,15 +124,15 @@ function Footer() {
             <div className="w-full flex items-center">
                 <div className=" inline-flex mx-auto flex-col items-center">
                     <div className="f fixed left-4 top-[20%] z-[999] mt-4  hidden lg:flex lg:flex-col">
-                        <a href="http://wa.me/256781936669" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 p-1 bg-[#0866FF] rounded-md">
+                        <a href="http://wa.me/250783784394" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 p-1 bg-[#0866FF] rounded-md">
                             <BsFacebook color="#FFFFFF" size={24} />
                         </a>
                             
-                        <a href="http://wa.me/256781936669" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 w-[34px]  bg-[#000000] rounded-md">
+                        <a href="" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 w-[34px]  bg-[#000000] rounded-md">
                             <img src={twitter} alt="twitter logo" />
                         </a>
 
-                        <a href="http://wa.me/256781936669" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 w-[34px] p-1 bg-[#12af0a] rounded-md">
+                        <a href="http://wa.me/250783784394" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 w-[34px] p-1 bg-[#12af0a] rounded-md">
                             <FaWhatsapp color="#FFFFFF" size={24} />                                    
                         </a>                        
                     </div>
