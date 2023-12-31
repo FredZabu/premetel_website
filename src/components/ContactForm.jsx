@@ -31,7 +31,7 @@ function ContactForm() {
  const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_x75q4bz', 'template_3uz4v6n', form.current, 'qMokT_IKV3wgMdBcr')
+    emailjs.sendForm('service_dgcs8gx', 'template_clz3p7u',e.target, '6Y41jJD0ovedc7asm')
       .then((result) => {
      
         setHide(false)

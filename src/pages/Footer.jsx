@@ -32,7 +32,7 @@ function Footer() {
      const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_hphy2ke', 'template_zr7o3sl', form.current, 'qMokT_IKV3wgMdBcr')
+    emailjs.sendForm('service_d4cwftv', 'template_ci81uqd', e.target, '6Y41jJD0ovedc7asm')
       .then((result) => {
         
         setHide(false)
@@ -43,6 +43,7 @@ function Footer() {
          
         setHide(false)
         setIcon(false);
+        console.log("Failed to send");
         auto()
       });
    e.target.reset();
