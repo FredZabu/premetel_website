@@ -1,5 +1,5 @@
 
-import keyImage1 from "../assets/keyImage1.png";
+
 import keyImage2 from "../assets/keyImage2.png";
 function KeyFocusHeader() {
   return (

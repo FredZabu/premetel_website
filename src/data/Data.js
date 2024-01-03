@@ -1,17 +1,14 @@
 
-import profile1 from "../assets/Profile/profile1.png";
+import profile1 from "../assets/Profile/profile1.jpg";
 import profile2 from "../assets/Profile/profile2.png";
-import profile3 from "../assets/Profile/profile3.png";
-import profile5 from "../assets/Profile/profile4.png";
-import profile4 from "../assets/Profile/profile5.png";
+import profile3 from "../assets/Profile/profile3.jpg";
+import profile5 from "../assets/Profile/profile5.jpg";
+import profile4 from "../assets/Profile/profile4.jpg";
 import nurse3 from "../assets/nurse5.png";
 import nurse4 from "../assets/nurse4.png";
 import nurse2 from "../assets/nurse3.png";
 import nurse1 from "../assets/nurse2.png";
-import serviceIcon1 from "../assets/serviceIcon1.png";
-import serviceIcon2 from "../assets/serviceIcon2.png";
-import serviceIcon3 from "../assets/serviceIcon3.png";
-import serviceIcon4 from "../assets/serviceIcon4.png";
+
 import doctor1 from "../assets/teamImage/image1.png";
 import doctor2 from "../assets/teamImage/image2.png";
 import doctor3 from "../assets/teamImage/image3.png";
@@ -24,9 +21,8 @@ import aspiration3 from "../assets/aspirationIcon3.png";
 import doctorNo from "../assets/doctorsOnBoardIcon.png";
 import pharmaciesNo from "../assets/onBoardIcon.png";
 import servedNo from "../assets/servedIcon.png";
-import phone from "../assets/phone.png";
-import chain from "../assets/chain.png";
-import timeIcon from "../assets/time.svg";
+
+
 import service1 from "../assets/service1.png";
 import service2 from "../assets/service2.png";
 import service3 from "../assets/service3.png";
@@ -144,19 +140,19 @@ export const appreciationData = [
 
 export const howData = [
   {
-    icon: timeIcon,
+    
     title: 'Book Your Appointment',
     description: 'Book an appointment with your selected doctor.Book your appointment through a call or online through our app',
     id:'how1'
   },
   {
-    icon: phone,
+    
     title: 'Primetel App Setup',
     description: 'If you are a first time user, you will need to create a new account using the link provided after booking your appointment.If you are a returning user, you will need to login to your account.',
     id:'how2'
   },
   {
-    icon: chain,
+   
     title: 'Get your prescribed medicine',
     description: 'Access  your prescriptions through our  platform',
     id:'how3'
@@ -167,26 +163,26 @@ export const howData = [
 
 export const valuesData = [
           {
-        icon: serviceIcon1,
+        
         title: 'Ownership',
         description: " We personalise your medical journey and walk with you across all milestones until recovery. We are problem solvers who ensure that your medical journey is nothing short of healing and restoration.",
         id: 'value1',
     },
           {
-        icon: serviceIcon2,
+        
         title: 'Ownership',
         description: "You are the reason we operate. We care about your well-being and are there 24/7 to ensure you remain well. You matter!",
         id: 'value2',
           }
                 ,{
-        icon: serviceIcon3,
+        
         title: 'Inclusivity ',
         description: " We don't leave anyone behind. Irrespective of your financial, environmental, religious, and political backgrounds, be assured of customised help from our experienced team.",
         id: 'value3',
 
                 },
                       {
-        icon: serviceIcon4,
+        
         title: 'Flexibility ',
         description: "    We are relentless in maximising our capacities to meet the needs of our customers. We aim to challenge the standards every time with our unmatched flexibility in providing our services.",
         id: 'value4',
@@ -220,12 +216,12 @@ export const teamData=[
 export const TestimonialData = [
   {
     profile: profile1,
-    name: "Kahwa Zabulon",
+    name: "Emmanuel .J.",
     comment: "When I heard about Primetel, I was not so certain I could get solutions to my special medical needs, however when I started using the app, I discovered that there were a lot of specialists I could gain access to and this has saved me the stress of hopping from hospitals to hospitals in search of specialists."
   },
   {
     profile: profile2,
-    name: "Asiimwe Fred",
+    name: "Fred Zabulon",
     comment: "I had a terrible flu at midnight and there was no way I could get to the hospital. I tried to google diagnosis and remedies but what I saw was quite disturbing. I decided to check through Primetel and I got a doctor who helped me with solutions that night."
   },
   {

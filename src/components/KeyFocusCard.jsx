@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import arrow from "../assets/arrow2.png";
-import { Link } from 'react-router-dom'
+
 import { HashLink } from "react-router-hash-link";
 
 function KeyFocusCard(props) {
